@@ -137,7 +137,7 @@
                             <div class="col-sm-3">
                               <img class="thumb-lg img-user-card" alt="" src="<?php echo $item->picture_url ?>">
                             </div>
-                            <div class="col-sm-9 text-left user-card-props"> 
+                            <div class="col-sm-9 text-left user-card-props">
                               <b style="font-size: 16px;">
                                 <?php echo $item->first_name ?>
                                 <?php echo $item->last_name ?>
