@@ -91,10 +91,8 @@
                                   <?php echo $reply->user->first_name ?>
                                   <?php echo $reply->user->last_name ?>
                                 </b>
-                                &nbsp;
                                 <span>&nbsp;
                                   <span class="label label-rouded label-success profile-card-label">Mentor</span>
-                                &nbsp;
                                 </span>
                                 <br>
                                 <span class="gray">
@@ -115,12 +113,7 @@
                       <div>
                         <div class="row">
                           <div class="col-md-12">
-                            <div class="opinion-images">
-                              <img class="img-responsive img-circle" alt="image" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/005/078/10e/23f9c3d.jpg">
-                              <img class="img-responsive img-circle" alt="image" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwHAAAAJDFkNzczZTZhLTY4YjYtNDVlZi1iNGNmLTk1ZmM5M2EyMWNiMA.jpg">
-                              <img class="img-responsive img-circle" alt="image" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAMdAAAAJDcwOGY3ZmQzLTA1YTMtNDlmYy05OWJhLWI3NWI2NjM4MGYwYg.jpg">
-                            </div>
-                            <div class="opinion-count gray">3 answers</div>
+                            <?php echo output_opinion_images($reply->opinion_icons) ?>
                           </div>
                         </div>
                       </div>
@@ -128,7 +121,8 @@
                   </div>
                   
               <?php } ?>
-              
+
+
 
             </div>
           </div>
