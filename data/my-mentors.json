@@ -1,0 +1,78 @@
+[
+  {
+    "id": 45,
+    "first_name": "Adriana",
+    "last_name": "Gascoigne",
+    "job_title": "Founder and CEO",
+    "birthdate": "1986-09-18",
+    "picture_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAMdAAAAJDcwOGY3ZmQzLTA1YTMtNDlmYy05OWJhLWI3NWI2NjM4MGYwYg.jpg",
+    "location": {
+      "name": "San Francisco Bay Area",
+      "latitude": 37.7884969,
+      "longitude": -122.3558473
+    },
+    "linkedin_profile_link": "https://www.linkedin.com/in/adrianagascoigne/",
+    "company_name": "Girls in Tech, Inc.",
+    "location_fallback": "San Francisco Bay Area",
+    "industry": "Marketing and Advertising",
+    "is_mentor": true,
+    "second_name": "Gascoigne"
+  },
+  {
+    "id": 31,
+    "first_name": "Joanna",
+    "last_name": "Furlong",
+    "job_title": "Girls in Tech, Inc.",
+    "birthdate": "1986-12-13",
+    "picture_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwHAAAAJDFkNzczZTZhLTY4YjYtNDVlZi1iNGNmLTk1ZmM5M2EyMWNiMA.jpg",
+    "location": {
+      "name": "San Diego, California",
+      "latitude": 32.7174209,
+      "longitude": -117.1627714
+    },
+    "linkedin_profile_link": "https://www.linkedin.com/in/joannabrinjak/",
+    "company_name": null,
+    "location_fallback": "San Diego, California",
+    "industry": "Consumer Goods",
+    "is_mentor": true,
+    "second_name": "Furlong"
+  },
+  {
+    "id": 46,
+    "first_name": "Amber",
+    "last_name": "Decoff",
+    "job_title": "Product Marketing Manager",
+    "birthdate": "1995-01-07",
+    "picture_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/005/078/10e/23f9c3d.jpg",
+    "location": {
+      "name": "San Francisco, California",
+      "latitude": 37.7792808,
+      "longitude": -122.4192363
+    },
+    "linkedin_profile_link": "https://www.linkedin.com/in/amberdecoff/",
+    "company_name": "Zipongo - Eating Well Made Simple",
+    "location_fallback": "San Francisco, California",
+    "industry": "Venture Capital & Private Equity",
+    "is_mentor": true,
+    "second_name": "Decoff"
+  },
+  {
+    "id": 33,
+    "first_name": "Miriam",
+    "last_name": "Mozias",
+    "job_title": "Advisory Board Member",
+    "birthdate": "1996-05-09",
+    "picture_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAfaAAAAJGI3MDY5ZTc1LWRjN2ItNGNkMS04MzU1LWU4ZjFkMTJkMmNkZg.jpg",
+    "location": {
+      "name": "Cambridge, Massachusetts",
+      "latitude": 42.3750997,
+      "longitude": -71.1056157
+    },
+    "linkedin_profile_link": "https://www.linkedin.com/in/miriammozias/",
+    "company_name": "Girls in Tech, Inc.",
+    "location_fallback": "Cambridge, Massachusetts",
+    "industry": "Information Services",
+    "is_mentor": true,
+    "second_name": "Mozias"
+  }
+]

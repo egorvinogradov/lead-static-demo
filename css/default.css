@@ -1,0 +1,50 @@
+.navbar-header .profile-pic {
+  padding: 0 12px;
+  line-height: 60px;
+  min-height: 60px;
+}
+
+.b-top .b-app .notify .point {
+  background-color: #E66544;
+}
+
+.b-top .b-app .notify .heartbit {
+  border-color: #E66544;
+}
+
+.b-top .b-app .b-notification-0 {
+  padding: 0 20px;
+}
+
+.b-top .b-app .b-notification-1 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #7F7F7F;
+  padding-bottom: 13px;
+}
+
+.b-top .b-app .b-notification-2 {
+  font-weight: 500;
+  margin: 5px 0 -1px 4px;
+  font-size: 14px;
+}
+
+.b-top .b-app .b-notification-3 {
+  font-size: 13px !important;
+  white-space: normal !important;
+}
+
+.b-top .b-app .b-notification-4 {
+  margin: 5px 0 -1px 4px;
+  font-size: 14px;
+  white-space: normal;
+  line-height: 19px;
+}
+
+.b-top .b-app .b-notification-5 {
+  border: 0;
+}
+
+.b-top .b-app .b-notification-dropdown li a:hover {
+  background: rgba(0,0,0,.05);
+}
