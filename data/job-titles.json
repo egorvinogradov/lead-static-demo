@@ -1,20 +1,21 @@
 [
   {
+    "category": "Career",
+    "keywords": [
+      ["Career Advice"]
+     ]
+  },
+  {
     "category": "Web Development",
     "keywords": [
-      ["Chief Technology Officer"],
-      ["CTO"],
       ["R&D"],
-      ["Architect"],
-      ["Database", "Administrator"],
+      ["Architecture"],
+      ["Database", "Administration"],
       ["Information", "Technology"],
-      ["IT", "Manager"],
-      ["IT", "Specialist"],
-      ["IT", "Administrator"],
+      ["IT", "Management"],
       ["Software", "Engineer"],
       ["Programmer"],
       ["Developer"],
-      ["Coder"],
       ["Backend"],
       ["Frontend"],
       ["Back end"],
