@@ -60,7 +60,7 @@
 
                         <div class="col-md-12 b-question-4">
                           <div class="pull-right">
-                            <button class="btn btn-info">Submit Your Question</button>
+                            <button class="btn btn-info b-question-submit">Submit Your Question</button>
                           </div>
                         </div>
 
@@ -69,6 +69,43 @@
                   </div>
                 </div>
               </div>
+
+
+
+
+<!--              b-question-self-->
+
+
+              <div class="panel b-question-9 b-question-self">
+                <div class="row">
+
+                  <div class="col-md-12">
+                    <div class="news-card-title">
+                      <p class="gray b-question-30">
+                        Your Question <span class="m-r-5 m-l-5">•</span> Submitted seconds ago
+                      </p>
+                      <div class="news-card-title2 b-question-10 b-question-text">
+                        If you mean a job as someone who applies off-the-shelf tools (e.g., libraries from R, or scikit-learn, or Dato),
+                        it might suffice to take two or three ML-related classes during your undergrad years, or one of the many online
+                        MOOCs (eg such as https://www.coursera.org/learn.
+                      </div>
+                    </div>
+
+                    <div class="news-card-delimiter"></div>
+                    <div class="col-md-12" style="padding-top: 15px;">
+                      <div>
+                        <div class="row">
+                          <div class="gray b-question-31">
+                            No answers yet
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
 
 
               <?php
@@ -111,7 +148,7 @@
                                 </div>
                               </div>
                               <div class="col-md-12 b-news-12" style="padding-right: 15px; padding-left: 15px; padding-top: 10px;">
-                                <p style="font-weight: 400; height: 66px; overflow: hidden;">
+                                <p style="font-weight: 400; height: 66px; overflow: hidden;" class="b-question-text">
                                   <?php echo $reply->text ?>
                                 </p>
                               </div>
@@ -119,6 +156,7 @@
                             <div></div>
                           </div>
                         </div>
+
                         <div class="col-md-12" style="padding-left: 15px; padding-bottom: 15px;">
                           <div>
                             <div class="row">
@@ -128,6 +166,7 @@
                             </div>
                           </div>
                         </div>
+
                         <div class="col-md-12"></div>
                       </div>
 

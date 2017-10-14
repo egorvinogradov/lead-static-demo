@@ -454,6 +454,7 @@ html {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-left: 5px;
 }
 
 .select2-container--default .select2-results__group {
@@ -512,6 +513,10 @@ html {
 
 .b-modal-13 {
   line-height: 20px;
+}
+
+.b-modal-13 a {
+  color: #222;
 }
 
 .b-modal-14 {
@@ -590,4 +595,25 @@ html {
 
 .b-signup-7 {
   padding: 110px 40px 50px 40px;
+}
+
+.b-question-self {
+  display: none;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 200ms;
+}
+
+.b-question-self--expanded {
+  transform: scaleY(1);
+}
+
+.b-question-30 {
+  text-transform: none;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.b-question-31 {
+  padding: 0 15px 15px 15px;
 }

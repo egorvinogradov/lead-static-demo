@@ -74,23 +74,26 @@ $item = $items[$include_data['newsfeed_id']];
                             </div>
 
                             <div class="col-md-12">
+
                               <div class="comment-card-img b-modal-14">
                                 <img class="img-responsive img-circle" alt="image" src="<?php echo $reply->user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
                               </div>
 
                               <div class="comment-card-name">
                                 <p class="b-modal-13">
-                                  <b>
-                                    <?php echo $reply->user->first_name ?>
-                                    <?php echo $reply->user->last_name ?>
-                                  </b>
-                                  <span class="label label-rouded label-success profile-card-label">Mentor</span>
-                                  <br>
-                                  <span class="gray">
+                                  <a href="/users/45/profile">
+                                    <b>
+                                      <?php echo $reply->user->first_name ?>
+                                      <?php echo $reply->user->last_name ?>
+                                    </b>
+                                    <span class="label label-rouded label-success profile-card-label">Mentor</span>
+                                    <br>
+                                    <span class="gray">
                                     <?php echo join(' at ', [$reply->user->job_title, $reply->user->company_name]) ?>
-                                    <span class="m-l-5 m-r-5">•</span>
-                                    <?php echo date( "m/d/Y", strtotime($reply->timestamp)) ?>
+                                      <span class="m-l-5 m-r-5">•</span>
+                                      <?php echo date("m/d/Y", strtotime($reply->timestamp)) ?>
                                   </span>
+                                  </a>
                                 </p>
                               </div>
                             </div>

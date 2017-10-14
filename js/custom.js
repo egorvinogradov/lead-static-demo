@@ -49,3 +49,25 @@ $('.b-modal-upvote').on('click', function(e){
   var counter = $(e.currentTarget).find('.btn').last();
   counter.text(+counter.text() + 1);
 });
+
+
+$('.b-question-submit').on('click', function(e){
+  var button = $(e.currentTarget);
+  var caption = button.text();
+  button.text('Submitting...');
+
+  setTimeout(function(){
+    button.text(caption);
+    var question = $('.b-question-self');
+    question.show();
+    setTimeout(function(){
+      question
+        .addClass('b-question-self--expanded')
+        .find('.b-question-text')
+        .text( $('#question-textarea').val() );
+
+      questionContainer.removeClass('active');
+      questionTextArea.val('');
+    }, 100);
+  }, 1000);
+});
