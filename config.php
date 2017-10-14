@@ -36,7 +36,7 @@ function include_file($name, $include_data = false){
 
 
 function get_json($name){
-  $content = file_get_contents('http://localhost/data/' . $name . '.json');
+  $content = file_get_contents('http://lead-static-demo.herokuapp.com/data/' . $name . '.json');
   return json_decode($content);
 }
 
