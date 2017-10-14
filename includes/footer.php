@@ -14,6 +14,7 @@
 <script type="text/javascript" src="/js/libs/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/libs/underscore-min.js"></script>
 <script type="text/javascript" src="/js/libs/angular.min.js"></script>
+<script type="text/javascript" src="/js/libs/select2.min.js"></script>
 <script type="text/javascript" src="/js/custom.js"></script>
 
 </body>

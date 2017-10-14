@@ -22,7 +22,7 @@
                     <div class="radio radio-info">
                       <input type="radio" name="mentors" id="allmentors" value="0">
                       <label class="b-filters-1" for="allmentors">
-                        All mentors
+                        All Mentors
                       </label>
                     </div>
                     <div class="lead-delimiter" style="margin-top: 15px;"></div>

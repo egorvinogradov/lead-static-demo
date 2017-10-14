@@ -403,10 +403,72 @@ html {
 .b-question-7 {
   height: 36px !important;
   padding-top: 8px !important;
+  transition: none !important;
 }
 
-.b-question-7:focus {
+#question-container.active .b-question-7 {
   height: 100px !important;
+  border-radius: 3px 3px 0 0 !important;
+  border-color: rgba(0,0,0,.3) !important;
+  box-shadow: 0 1px 5px rgba(0,0,0,.1) !important;
+
+  box-shadow: 0 1px 1px rgba(0,0,0,.02) !important;
+  border-bottom-color: rgba(0,0,0,.1) !important;
 }
 
+.b-question-4 {
+  margin-top: -5px;
+}
 
+.b-question-6 {
+  display: none;
+  margin-bottom: 27px !important;
+}
+
+#question-container.active .b-question-6 {
+  display: block;
+}
+
+.b-question-6 {
+
+  background: #F4F7F8;
+
+  background: rgba(0,0,0,.02);
+  margin: -26px 7.5px 17px 7.5px;
+  padding: 13px 13px;
+
+
+  /*padding: 13px 0 14px 0;*/
+  /*margin: -24px 8px 17px 8px;*/
+  /*background: none;*/
+
+
+  border: 1px solid rgba(0,0,0,.3) !important;
+  border-radius: 0 0 3px 3px;
+  border-width: 0px 1px 1px 1px !important;
+
+  border-bottom: 1px solid rgba(0,0,0,.045);
+}
+
+.b-question-6 .select2-search__field {
+  margin-top: 7px !important;
+  margin-left: 6px;
+}
+
+.b-question-6 .select2-selection,
+.checkbox label::before {
+  border-color: rgba(0,0,0,.15) !important;
+}
+
+.b-question-5 {
+  margin-top: 3px;
+  height: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.select2-container--default .select2-results__group {
+  font-weight: normal;
+  color: #7f7f7f;
+}

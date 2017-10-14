@@ -36,7 +36,7 @@ function include_file($name, $include_data = false){
 
 
 function get_json($name){
-  $content = file_get_contents('http://lead-static-demo.herokuapp.com/data/' . $name . '.json');
+  $content = file_get_contents('http://localhost/data/' . $name . '.json');
   return json_decode($content);
 }
 
@@ -49,4 +49,16 @@ function output_opinion_images($ids, $suffix, $prefix = null){
   }, $ids);
   $count_str = $suffix ? '<div class="opinion-count gray">' . $prefix . ' ' .  count($ids) . ' ' . $suffix . '</div>' : '';
   return '<div class="opinion-images">' . join('', $imgs) . '</div>' . $count_str;
+}
+
+
+function render_qa_tags(){
+  $categories = get_json('job-titles');
+  $categories_str_list = array_map(function($category, $i){
+    $titles_str_list = array_map(function($title, $j) use ($i) {
+      return '<option value="' . $i . '-' . $j . '">' . join(' ', $title) . '</option>';
+    }, $category->keywords, array_keys($category->keywords));
+    return '<optgroup label="' . $category->category . '">' . join("\n", $titles_str_list) . '</optgroup>';
+  }, $categories, array_keys($categories));
+  return join("\n", $categories_str_list);
 }

@@ -11,10 +11,10 @@
           <div class="col-lg-3 col-md-3  col-sm-12 col-xs-12">
             <div class="white" style="padding: 0px;">
               <ul class="subsidebar">
-                <a href="#" class="active">
+                <a class="active">
                   <li>Most Relevant Questions</li>
                 </a>
-                <a href="#" class="">
+                <a class="">
                   <li>New Questions</li>
                 </a>
               </ul>
@@ -26,39 +26,44 @@
                 <div class="panel-body">
                   <div class="row">
                     <div class="">
-                      <div class="form form-horizontal">
+                      <div class="form form-horizontal" id="question-container">
                         <div class="form-group">
                           <div class="col-md-12">
                             <div class="col-md-12">
-                              <textarea draggable="false" placeholder="Ask Your Question..." class="form-control b-question-7" rows="6"></textarea>
+                              <textarea id="question-textarea" placeholder="Ask Your Question..." class="form-control b-question-7"></textarea>
                             </div>
                           </div>
                         </div>
 
-                        <div class="col-md-4">
-                          <select class="form-control">
-                            <option value="">Choose topics</option>
-                          </select>
-                        </div>
+                        <div class="clearfix b-question-6">
 
-                        <div class="col-md-4">
-                          <div>
-                            <label>
-                              <div class="checkbox checkbox-info">
-                                <input type="checkbox" id="radio2" value="on">
-                                <label for="radio2">
-                                  Ask Anonymously
-                                </label>
-                              </div>
-                            </label>
+                          <div class="col-md-4 p-l-0">
+                            <select id="question-tags" name="states[]" multiple="multiple">
+                              <?php echo render_qa_tags() ?>
+                            </select>
                           </div>
+
+                          <div class="b-question-5 m-r-5 pull-right">
+                            <div>
+                              <label>
+                                <div class="checkbox checkbox-info">
+                                  <input type="checkbox" id="radio2" value="on">
+                                  <label for="radio2">
+                                    Ask Anonymously
+                                  </label>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-12 b-question-4">
                           <div class="pull-right">
                             <button class="btn btn-info">Submit Your Question</button>
                           </div>
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -80,7 +85,6 @@
                       <div class="col-md-12">
                         <div class="news-card-title">
                           <div class="dots2  news-card-title2 b-question-10">
-                            <?php echo $item->title ?>
                             <?php echo $item->title ?>
                           </div>
                         </div>
