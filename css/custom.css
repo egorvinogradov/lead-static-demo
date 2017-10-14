@@ -560,3 +560,34 @@ html {
 .img-modal-header {
   height: 250px !important;
 }
+
+.b-signup-10 {
+  background: #2D77B0 !important;
+  border-color: #2D77B0 !important;
+  font-size: 16px;
+  padding: 13px 0 12px 0;
+  -webkit-font-smoothing: initial;
+}
+
+.b-signup-10 .fa {
+  font-size: 19px;
+  margin-right: 6px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.b-signup-9 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.b-signup-8 {
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-font-smoothing: initial;
+  margin-bottom: 35px;
+}
+
+.b-signup-7 {
+  padding: 110px 40px 50px 40px;
+}
