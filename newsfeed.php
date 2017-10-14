@@ -11,13 +11,13 @@
           <div class="col-lg-3 col-md-3  col-sm-12 col-xs-12">
             <div class="white" style="padding: 0px;">
               <ul class="subsidebar">
-                <a href="/newsfeed/1/" class="active">
+                <a class="active">
                   <li>Marketing</li>
                 </a>
-                <a href="/newsfeed/10/">
+                <a>
                   <li>Public Relations</li>
                 </a>
-                <a href="/newsfeed/7/">
+                <a>
                   <li>Startups</li>
                 </a>
               </ul>
@@ -34,7 +34,7 @@
                 $reply = $replies[$index]; ?>
               
                 <div>
-                  <div class="col-md-6 col-sm-12 b-news-9">
+                  <div class="col-md-6 col-sm-12 b-news-9 b-modal-open">
                     <div style="margin-bottom: 15px;">
                       <div class="text-center news-card" style="background-image: url(<?php echo $item->image_url ?>)"></div>
                       <div class="white" style="padding: 0px;">
@@ -106,4 +106,5 @@
   </div>
 </div>
 
+<?php include_file('newsfeed-modal', [newsfeed_id => 0]) ?>
 <?php include_file('includes/footer') ?>

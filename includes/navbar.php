@@ -76,8 +76,8 @@
 
                 <li><a href="/dashboard">Dashboard</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
               </ul>
             </div>
           </div>

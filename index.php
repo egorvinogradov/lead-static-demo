@@ -28,66 +28,23 @@
                     <div class="lead-delimiter" style="margin-top: 15px;"></div>
                   </div>
                 </div>
-                <div class="form-group"><label class="col-md-12">Job title</label>
+                <div class="form-group">
+                  <label class="col-md-12">Job title</label>
                   <div class="col-md-12">
-                    <select multiple="" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
-                      <option value="Advisory Board Member">Advisory Board Member</option>
-                      <option value="Amazon Web Services">Amazon Web Services</option>
-                      <option value="Analyst">Analyst</option>
-                      <option value="Co-Founder">Co-Founder</option>
-                      <option value="Co-Founder&amp;CEO">Co-Founder&amp;CEO</option>
-                      <option value="Co-Founder, CTO">Co-Founder, CTO</option>
-                      <option value="Digital Marketing/Community Manager">Digital Marketing/Community Manager
-                      </option>
-                      <option value="Director of Product, Host &amp; Homes">Director of Product, Host &amp;
-                        Homes
-                      </option>
-                      <option value="Founder and CEO">Founder and CEO</option>
-                      <option value="Founder and Video Production Specialist">Founder and Video Production
-                        Specialist
-                      </option>
-                      <option value="Girls in Tech, Inc.">Girls in Tech, Inc.</option>
-                      <option value="Implementation Consultant">Implementation Consultant</option>
-                      <option value="Jalydew">Jalydew</option>
-                      <option value="Javascript Developer">Javascript Developer</option>
-                      <option value="National Programs Director">National Programs Director</option>
-                      <option value="Product Marketing Manager">Product Marketing Manager</option>
-                      <option value="Product Tinkerer">Product Tinkerer</option>
-                      <option value="Senior Product Manager">Senior Product Manager</option>
-                      <option value="Social Impact Fellow, Investing in Women">Social Impact Fellow, Investing in
-                        Women
-                      </option>
-                      <option value="Software Engineer">Software Engineer</option>
-                      <option value="Student Intern">Student Intern</option>
-                      <option value="Technical Project Manager">Technical Project Manager</option>
-                      <option value="Twilio Inc.">Twilio Inc.</option>
-                      <option value="Web Application Developer">Web Application Developer</option>
-                    </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 271.359px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Select..." style="width: 208.25px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    <input type="text" value="" placeholder="Select..." class="form-control">
                   </div>
                 </div>
-                <div class="form-group"><label class="col-md-12">Industry</label>
+                <div class="form-group">
+                  <label class="col-md-12">Industry</label>
                   <div class="col-md-12">
-                    <select multiple="" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
-                      <option value="Capital Markets">Capital Markets</option>
-                      <option value="Computer Software">Computer Software</option>
-                      <option value="Consumer Goods">Consumer Goods</option>
-                      <option value="Information Services">Information Services</option>
-                      <option value="Information Technology &amp; Services">Information Technology &amp;
-                        Services
-                      </option>
-                      <option value="Internet">Internet</option>
-                      <option value="Marketing and Advertising">Marketing and Advertising</option>
-                      <option value="Media Production">Media Production</option>
-                      <option value="Non-Profit Organization Management">Non-Profit Organization Management
-                      </option>
-                      <option value="Venture Capital &amp; Private Equity">Venture Capital &amp; Private Equity
-                      </option>
-                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 248.453px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Select..." style="width: 208.25px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    <input type="text" value="" placeholder="Select..." class="form-control">
                   </div>
                 </div>
-                <div class="form-group"><label class="col-md-12">Location</label>
+                <div class="form-group">
+                  <label class="col-md-12">Location</label>
                   <div class="col-md-12">
-                    <input type="text" value="" placeholder="Enter city..." class="form-control"></div>
+                    <input type="text" value="" placeholder="Enter city..." class="form-control">
+                  </div>
                 </div>
                 <div class="lead-delimiter" style="margin-top: 15px; margin-bottom: 15px;"></div>
                 <div class="form-group">

@@ -410,10 +410,8 @@ html {
   height: 100px !important;
   border-radius: 3px 3px 0 0 !important;
   border-color: rgba(0,0,0,.3) !important;
-  box-shadow: 0 1px 5px rgba(0,0,0,.1) !important;
-
-  box-shadow: 0 1px 1px rgba(0,0,0,.02) !important;
   border-bottom-color: rgba(0,0,0,.1) !important;
+  box-shadow: 0 1px 1px rgba(0,0,0,.02) !important;
 }
 
 .b-question-4 {
@@ -430,24 +428,14 @@ html {
 }
 
 .b-question-6 {
-
-  background: #F4F7F8;
-
   background: rgba(0,0,0,.02);
   margin: -26px 7.5px 17px 7.5px;
   padding: 13px 13px;
-
-
-  /*padding: 13px 0 14px 0;*/
-  /*margin: -24px 8px 17px 8px;*/
-  /*background: none;*/
-
-
-  border: 1px solid rgba(0,0,0,.3) !important;
-  border-radius: 0 0 3px 3px;
-  border-width: 0px 1px 1px 1px !important;
-
+  border-style: solid;
+  border-color: rgba(0,0,0,.3) !important;
+  border-width: 0 1px 1px 1px !important;
   border-bottom: 1px solid rgba(0,0,0,.045);
+  border-radius: 0 0 3px 3px;
 }
 
 .b-question-6 .select2-search__field {
@@ -471,4 +459,104 @@ html {
 .select2-container--default .select2-results__group {
   font-weight: normal;
   color: #7f7f7f;
+}
+
+.b-modal-10 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.b-modal-9 {
+  font-size: 16px;
+}
+
+.b-modal-8 {
+  font-weight: normal;
+  line-height: 19px;
+  margin-bottom: 14px;
+}
+
+.b-modal-7 {
+  font-size: 22px !important;
+  line-height: 26px !important;
+  font-weight: normal !important;
+  text-transform: none !important;
+}
+
+.b-modal-6 {
+  box-shadow: none;
+}
+
+.b-modal-11 {
+  margin: 27px -30px 7px -30px;
+}
+
+.b-modal-12 {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.user-pick-bg {
+  margin-left: -30px;
+  padding-left: 30px;
+  width: calc(100% + 60px);
+  padding-right: 30px;
+}
+
+.profile-card-label {
+  padding: 2px 7px !important;
+  vertical-align: text-top !important;
+  line-height: 16px;
+  margin-left: 2px;
+}
+
+.b-modal-13 {
+  line-height: 20px;
+}
+
+.b-modal-14 {
+  margin-right: 11px;
+  margin-top: -7px;
+}
+
+.b-modal-14 img {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.b-modal-15 {
+  line-height: 19px;
+  margin-top: 5px;
+  margin-bottom: 11px;
+}
+
+.lead-delimiter {
+  margin-bottom: 8px;
+}
+
+.b-modal-16 {
+  height: 29px;
+  padding: 0 10px 0 10px;
+  font-size: 13px;
+}
+
+.b-modal-17 {
+  margin-bottom: 25px;
+}
+
+.b-modal-16.btn-default {
+  border-color: rgba(0,0,0,.3);
+  color: rgba(0,0,0,.5);
+}
+
+.b-modal-18 {
+  width: 100% !important;
+}
+
+.b-modal-19 {
+  margin-bottom: -10px;
+}
+
+.img-modal-header {
+  height: 250px !important;
 }
