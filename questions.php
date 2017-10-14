@@ -28,13 +28,20 @@
                     <div class="">
                       <div class="form form-horizontal">
                         <div class="form-group">
-                          <div class="col-md-12"><label class="col-md-12" style="font-size: 16px;">Ask question</label>
+                          <div class="col-md-12">
                             <div class="col-md-12">
-                              <textarea draggable="false" placeholder="..." class="form-control" rows="6"></textarea>
+                              <textarea draggable="false" placeholder="Ask Your Question..." class="form-control b-question-7" rows="6"></textarea>
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-6">
+
+                        <div class="col-md-4">
+                          <select class="form-control">
+                            <option value="">Choose topics</option>
+                          </select>
+                        </div>
+
+                        <div class="col-md-4">
                           <div>
                             <label>
                               <div class="checkbox checkbox-info">
@@ -46,7 +53,8 @@
                             </label>
                           </div>
                         </div>
-                        <div class="col-md-6">
+
+                        <div class="col-md-4">
                           <div class="pull-right">
                             <button class="btn btn-info">Submit Your Question</button>
                           </div>
@@ -66,60 +74,61 @@
                   ?>
 
 
-                  <div class="panel">
-                    <div class="panel-heading">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <h4>
-                            <a class="dots2 titlehack" href="/questions/<?php echo $item->id ?>">
-                              <?php echo $item->title ?>
-                            </a>
-                          </h4>
+                  <div class="panel b-question-9">
+                    <div class="row">
+
+                      <div class="col-md-12">
+                        <div class="news-card-title">
+                          <div class="dots2  news-card-title2 b-question-10">
+                            <?php echo $item->title ?>
+                            <?php echo $item->title ?>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="panel-body">
-                      <div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="qa_block1">
-                              <img class="img-responsive img-circle" alt="image" src="<?php echo $reply->user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
+                        <div class="news-card-delimiter"></div>
+                        <div class="col-md-12" style="padding-top: 15px;">
+                          <div>
+                            <div class="row">
+                              <div class="col-md-2 b-news-10-0">
+                                <div class="text-center b-news-10">
+                                  <img class="img-responsive img-circle" alt="image" src="<?php echo $reply->user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
+                                </div>
+                              </div>
+                              <div class="col-md-9" style="padding-left: 0px;">
+                                <div>
+                                  <p>
+                                    <b class="b-news-11">
+                                      <?php echo $reply->user->first_name ?>
+                                      <?php echo $reply->user->last_name ?>
+                                    </b>
+                                    <span class="gray">
+                                        <?php echo join(' at ', [$reply->user->job_title, $reply->user->company_name]) ?>
+                                      </span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="col-md-12 b-news-12" style="padding-right: 15px; padding-left: 15px; padding-top: 10px;">
+                                <p style="font-weight: 400; height: 66px; overflow: hidden;">
+                                  <?php echo $reply->text ?>
+                                </p>
+                              </div>
                             </div>
-                            <div class="qa_block2">
-                              <p>
-                                <b>
-                                  <?php echo $reply->user->first_name ?>
-                                  <?php echo $reply->user->last_name ?>
-                                </b>
-                                <span>&nbsp;
-                                  <span class="label label-rouded label-success profile-card-label">Mentor</span>
-                                </span>
-                                <br>
-                                <span class="gray">
-                                  <?php echo join(' at ', [$reply->user->job_title, $reply->user->company_name]) ?>
-                                </span>
-                              </p>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12" style="padding-left: 15px; padding-bottom: 15px;">
+                          <div>
+                            <div class="row">
+                              <div class="col-md-12 b-news-13">
+                                <?php echo output_opinion_images($reply->opinion_icons, 'more answers') ?>
+                              </div>
                             </div>
                           </div>
-                          <div class="col-md-12" style="padding-top: 10px;">
-                            <p class="dots3" style="font-weight: 400; height: 62px; overflow: hidden; margin: 0px; width: 703px;">
-                              <?php echo $reply->text ?>
-                            </p>
-                          </div>
                         </div>
-                        <div></div>
+                        <div class="col-md-12"></div>
                       </div>
-                      <br>
-                      <div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <?php echo output_opinion_images($reply->opinion_icons) ?>
-                          </div>
-                        </div>
-                      </div>
+
                     </div>
                   </div>
-                  
               <?php } ?>
 
 

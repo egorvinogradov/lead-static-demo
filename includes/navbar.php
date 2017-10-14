@@ -27,7 +27,7 @@
                 <a href="/users/56/messages">
                   <div class="user-img">
                     <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwHAAAAJDFkNzczZTZhLTY4YjYtNDVlZi1iNGNmLTk1ZmM5M2EyMWNiMA.jpg" alt="user" class="img-circle">
-                    <span class="profile-status online pull-right"></span>
+                    <span class="profile-status online pull-right bg-danger"></span>
                   </div>
                   <div class="mail-contnet">
                     <h5 class="b-notification-2">Jenna Stone</h5>
@@ -42,10 +42,13 @@
                 <a class="b-notification-5" href="#">
                   <div class="user-img">
                     <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwHAAAAJDFkNzczZTZhLTY4YjYtNDVlZi1iNGNmLTk1ZmM5M2EyMWNiMA.jpg" alt="user" class="img-circle">
-                    <span class="profile-status online pull-right"></span>
+                    <span class="profile-status online pull-right bg-danger"></span>
                   </div>
                   <div class="mail-contnet">
-                    <h5 class="b-notification-4">Please rate your experience with Jenna Stone</h5>
+                    <h5 class="b-notification-2">Jenna Stone</h5>
+                    <span class="b-notification-3 mail-desc">
+                      Please rate your experience <span class="text-nowrap">with Jenna</span>
+                    </span>
                   </div>
                 </a>
 
@@ -71,7 +74,7 @@
               </button>
               <ul role="menu" class="dropdown-menu" aria-labelledby="profile-card">
 
-                <li><a href="/dashboard"><span>Dashboard</span></a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Settings</a></li>
                 <li><a href="#">Logout</a></li>

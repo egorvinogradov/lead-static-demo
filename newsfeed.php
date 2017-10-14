@@ -49,7 +49,7 @@
                             <div class="col-md-12" style="padding-top: 15px;">
                               <div>
                                 <div class="row">
-                                  <div class="col-md-2">
+                                  <div class="col-md-2 b-news-10-0">
                                     <div class="text-center b-news-10">
                                       <img class="img-responsive img-circle" alt="image" src="<?php echo $reply->user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
                                     </div>
@@ -80,7 +80,7 @@
                               <div>
                                 <div class="row">
                                   <div class="col-md-12 b-news-13">
-                                    <?php echo output_opinion_images($reply->opinion_icons) ?>
+                                    <?php echo output_opinion_images($reply->opinion_icons, 'more opinions') ?>
                                   </div>
                                 </div>
                               </div>

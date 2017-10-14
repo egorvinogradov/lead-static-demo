@@ -36,16 +36,17 @@ function include_file($name, $include_data = false){
 
 
 function get_json($name){
-  $content = file_get_contents('http://lead-static-demo.herokuapp.com/data/' . $name . '.json');
+  $content = file_get_contents('http://localhost/data/' . $name . '.json');
   return json_decode($content);
 }
 
 
-function output_opinion_images($ids){
+function output_opinion_images($ids, $suffix, $prefix = null){
   $users = get_json('mentors');
   $imgs = array_map(function($id) use ($users){
     $url = $users[$id]->picture_url;
     return '<img class="img-responsive img-circle" alt="image" src="' . $url . '">';
   }, $ids);
-  return '<div class="opinion-images">' . join('', $imgs) . '</div><div class="opinion-count gray">' . count($ids) . ' answers</div>';
+  $count_str = $suffix ? '<div class="opinion-count gray">' . $prefix . ' ' .  count($ids) . ' ' . $suffix . '</div>' : '';
+  return '<div class="opinion-images">' . join('', $imgs) . '</div>' . $count_str;
 }

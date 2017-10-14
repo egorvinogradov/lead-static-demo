@@ -9,19 +9,19 @@
       <div class="col-sm-12">
         <div class="row">
           <div class="col-lg-3 col-md-3  col-sm-12 col-xs-12">
-            <div class="white" style="overflow: hidden; padding-bottom: 0px;">
+            <div class="white b-filters" style="overflow: hidden; padding-bottom: 0px;">
               <form class="form-horizontal" _lpchecked="1">
                 <div class="form-group">
                   <div class="col-md-12">
                     <div class="radio radio-info">
                       <input type="radio" name="mentors" id="specificcompany" value="1" checked>
-                      <label for="specificcompany">
+                      <label class="b-filters-1" for="specificcompany">
                         My Company Only
                       </label>
                     </div>
                     <div class="radio radio-info">
                       <input type="radio" name="mentors" id="allmentors" value="0">
-                      <label for="allmentors">
+                      <label class="b-filters-1" for="allmentors">
                         All mentors
                       </label>
                     </div>
@@ -117,7 +117,7 @@
               </form>
             </div>
           </div>
-          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 b-mentors-card-7">
             <div class="row">
 
 
@@ -129,34 +129,35 @@
                 <div>
                   <div class="col-md-12 col-sm-12">
 
-                    <a href="/users/<?php echo $item->id ?>">
+                    <a href="/users/45/profile">
+                      <!-- <?php echo $item->id ?> -->
                       <div>
                       <div class="panel panel-user-card null">
-                        <div class="panel-heading">
+                        <div class="panel-heading b-mentors-card-8">
                           <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-md-4 col-lg-3 b-mentors-card-6">
                               <img class="thumb-lg img-user-card" alt="" src="<?php echo $item->picture_url ?>">
                             </div>
-                            <div class="col-sm-9 text-left user-card-props">
+                            <div class="col-md-8 col-lg-9 text-left user-card-props">
                               <b style="font-size: 16px;">
                                 <?php echo $item->first_name ?>
                                 <?php echo $item->last_name ?>
                               </b>
-                              <p style="font-weight: normal; text-transform: none;">
+                              <p style="font-weight: normal; text-transform: none;" class="b-mentors-card-9">
                                 <?php echo join(' at ', [$item->job_title, $item->company_name]) ?>
                               </p>
-                              <div>
+                              <div class="b-mentors-card-10">
                                 <table class="table-props">
                                   <tbody>
                                   <tr>
-                                    <td><span class="gray"><i class="fa fa-briefcase"></i></span></td>
+                                    <td><span class="gray"><i class="fa fa-folder-open"></i></span></td>
                                     <td><span class="gray">Industry:</span></td>
                                     <td class="text-left">
                                       <?php echo $item->industry ?>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td><span class="gray"><i class="fa fa-map-marker"></i></span></td>
+                                    <td><span class="gray"><i class="fa fa-location-arrow"></i></span></td>
                                     <td><span class="gray">Location:</span></td>
                                     <td class="text-left">
                                       <?php echo $item->location->name ?>

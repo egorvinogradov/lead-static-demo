@@ -20,7 +20,7 @@
                 <a href="/users/<?php echo $item->id ?>">
                   <div>
                     <div class="panel panel-user-card <?php echo $is_request ? 'request-mentor' : '' ?>">
-                      <div class="panel-heading">
+                      <div class="panel-heading b-mentors-card-8">
                         <div class="row">
                           <div class="col-sm-3">
                             <img class="thumb-lg img-user-card" alt="" src="<?php echo $item->picture_url ?>">
@@ -30,21 +30,21 @@
                               <?php echo $item->first_name ?>
                               <?php echo $item->last_name ?>
                             </b>
-                            <p style="font-weight: normal; text-transform: none;">
+                            <p style="font-weight: normal; text-transform: none;" class="b-mentors-card-9">
                               <?php echo join(' at ', [$item->job_title, $item->company_name]) ?>
                             </p>
-                            <div>
+                            <div class="b-mentors-card-10">
                               <table class="table-props">
                                 <tbody>
                                 <tr>
-                                  <td><span class="gray"><i class="fa fa-briefcase"></i></span></td>
+                                  <td><span class="gray"><i class="fa fa-folder-open"></i></span></td>
                                   <td><span class="gray">Industry:</span></td>
                                   <td class="text-left">
                                     <?php echo $item->industry ?>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td><span class="gray"><i class="fa fa-map-marker"></i></span></td>
+                                  <td><span class="gray"><i class="fa fa-location-arrow"></i></span></td>
                                   <td><span class="gray">Location:</span></td>
                                   <td class="text-left">
                                     <?php echo $item->location->name ?>
