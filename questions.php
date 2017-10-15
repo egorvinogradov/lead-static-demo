@@ -73,9 +73,6 @@
 
 
 
-<!--              b-question-self-->
-
-
               <div class="panel b-question-9 b-question-self">
                 <div class="row">
 

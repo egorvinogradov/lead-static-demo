@@ -1,12 +1,13 @@
+<?php include_once '../config.php' ?>
 <?php
 $items = get_json('newsfeed');
 $replies = get_json('newsfeed-comments');
 $item = $items[$include_data['newsfeed_id']];
 ?>
 
-<div class="b-modal hidden" role="dialog">
+<div class="b-modal hidden" role="dialog" name="newsfeed">
   <div class="modal-backdrop fade in"></div>
-  <div role="dialog" tabindex="-1" class="fade in modal" style="display: block; padding-left: 0px;">
+  <div role="dialog" tabindex="-1" class="fade in modal">
     <div class="modal-lg modal-dialog">
       <div class="modal-content" role="document">
         <div class="img-modal-header" style="background: url('<?php echo $item->image_url ?>') center center / cover;"></div>

@@ -1,4 +1,4 @@
 <?php
 include_once '../../config.php';
-include_file('users/messages', [user_id => 2]);
+include_file('includes/messages', [user_id => 2]);
 ?>

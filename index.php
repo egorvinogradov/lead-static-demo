@@ -135,7 +135,7 @@
                         <div class="panel-body">
                           <div>
                             <div class="pull-right btn-bottom-right2" style="margin-right: 0px;">
-                              <button class="btn btn-info">Ask to become your mentor</button>
+                              <button class="btn btn-info b-request-mentorship-button">Ask to become your mentor</button>
                             </div>
                           </div>
                         </div>

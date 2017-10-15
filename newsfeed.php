@@ -106,5 +106,5 @@
   </div>
 </div>
 
-<?php include_file('newsfeed-modal', [newsfeed_id => 0]) ?>
+<?php include_file('includes/newsfeed-modal', [newsfeed_id => 0]) ?>
 <?php include_file('includes/footer') ?>

@@ -68,6 +68,13 @@ $item = get_json('mentors')[$user_id];
                       </tbody>
                     </table>
                   </div>
+
+                  <div class="m-b-20">
+                    <button class="btn btn-info b-request-mentorship-button">
+                      Ask <?php echo $item->first_name ?> to become your mentor
+                    </button>
+                  </div>
+
                 </div>
               </div>
 
