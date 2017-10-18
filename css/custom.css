@@ -656,3 +656,60 @@ html {
 .b-profile-41 {
   margin-top: 25px;
 }
+
+.chat-main-box .chat-right-aside {
+  margin-left: 0;
+}
+
+.chat-list .chat-body {
+  font-size: 14px;
+}
+
+.chat-list .chat-text h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chat-list .odd .chat-body {
+  text-align: left;
+}
+
+.chat-list .chat-text b {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.chat-list .chat-text {
+  display: block;
+}
+
+.chat-list .chat-text p {
+  line-height: 19px;
+}
+
+.chat-list .odd .chat-text {
+  background: #4F5467;
+}
+
+.chat-list .chat-image {
+  width: 40px;
+}
+
+.chat-main-box .chat-right-aside .send-chat-box .form-control {
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 12px;
+  height: 100px;
+}
+
+.chat-main-box .chat-right-aside .send-chat-box .custom-send {
+  right:17px;
+}
+
+.chat-image {
+  display: none !important;
+}
+
+.chat-list .chat-body {
+  margin: 0 !important;
+}
+
