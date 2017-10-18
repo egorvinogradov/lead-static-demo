@@ -73,10 +73,11 @@
                 <span class="caret"></span>
               </button>
               <ul role="menu" class="dropdown-menu" aria-labelledby="profile-card">
-
+                <li><a href="/users/45/profile">My Profile</a></li>
+                <li><a>Settings</a></li>
+                <li role="separator" class="divider"></li>
                 <li><a href="/dashboard">Dashboard</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a>Settings</a></li>
                 <li><a>Logout</a></li>
               </ul>
             </div>

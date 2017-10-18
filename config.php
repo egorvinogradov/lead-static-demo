@@ -62,3 +62,7 @@ function render_qa_tags(){
   }, $categories, array_keys($categories));
   return join("\n", $categories_str_list);
 }
+
+function get_user_by_index($index){
+  return get_json('mentors')[$index];
+}

@@ -110,6 +110,7 @@
                 $replies = get_json('questions-replies');
                 foreach ($items as $index=>$item) {
                   $reply = $replies[$index];
+                  $replyUser = get_user_by_index($reply->user);
                   ?>
 
 
@@ -128,18 +129,18 @@
                             <div class="row">
                               <div class="col-md-2 b-news-10-0">
                                 <div class="text-center b-news-10">
-                                  <img class="img-responsive img-circle" alt="image" src="<?php echo $reply->user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
+                                  <img class="img-responsive img-circle" alt="image" src="<?php echo $replyUser->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
                                 </div>
                               </div>
                               <div class="col-md-9" style="padding-left: 0px;">
                                 <div>
                                   <p>
                                     <b class="b-news-11">
-                                      <?php echo $reply->user->first_name ?>
-                                      <?php echo $reply->user->last_name ?>
+                                      <?php echo $replyUser->first_name ?>
+                                      <?php echo $replyUser->last_name ?>
                                     </b>
                                     <span class="gray">
-                                        <?php echo join(' at ', [$reply->user->job_title, $reply->user->company_name]) ?>
+                                        <?php echo join(' at ', [$replyUser->job_title, $replyUser->company_name]) ?>
                                       </span>
                                   </p>
                                 </div>

@@ -19,7 +19,11 @@
     "company_name": null,
     "location_fallback": "San Diego, California",
     "relevance": 3,
-    "second_name": "Furlong"
+    "second_name": "Furlong",
+    "relationship": "mentor",
+    "already_rated": false,
+    "has_messages": true,
+    "unread_messages_count": 1
   },
   {
     "id": 47,

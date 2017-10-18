@@ -34,11 +34,11 @@
 }
 
 .b-top .b-app .notify .point {
-  background-color: #E66544;
+  background-color: #F75B36;
 }
 
 .b-top .b-app .notify .heartbit {
-  border-color: #E66544;
+  border-color: #F75B36;
 }
 
 .b-top .b-app .b-notification-0 {
@@ -236,7 +236,7 @@ input[type=password] {
 }
 
 .bg-danger {
-  background: #E66544 !important;
+  background: #F75B36 !important;
 }
 
 .img-user-card {
@@ -259,10 +259,6 @@ input[type=password] {
 
 .b-profile-11 {
   line-height: 22px;
-}
-
-.b-profile-11 .fa-star {
-  margin-right: 1px;
 }
 
 .b-profile-13 {
@@ -290,7 +286,7 @@ input[type=password] {
 
 .b-profile-18 {
   margin-left: 17px !important;
-  margin-top: 15px !important;
+  margin-top: 25px !important;
   position: relative;
 }
 
@@ -303,8 +299,9 @@ input[type=password] {
   line-height: 22px;
 }
 
+.b-profile-11 .fa-star,
 .b-profile-20 .fa-star {
-  margin-right: 1px;
+  padding-right: 1px;
 }
 
 .b-profile-21 {
@@ -632,4 +629,30 @@ html {
   margin: 0;
   float: left;
   padding: 0 3px 0 8px;
+}
+
+.btn-default .fa {
+  color: #989898;
+}
+
+.b-profile-rate-row {
+  display: inline;
+}
+
+.b-profile-rate-row:hover .fa-star {
+  color: #F75B36 !important;
+}
+
+.b-profile-rate-row .fa-star:hover ~ .fa-star {
+  color: #D2D9DC !important;
+}
+
+.b-profile-40 {
+  padding: 5px 8px 3px 8px !important;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+.b-profile-41 {
+  margin-top: 25px;
 }
