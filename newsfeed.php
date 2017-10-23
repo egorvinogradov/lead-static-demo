@@ -29,10 +29,10 @@
 
               <?php
               $items = get_json('newsfeed');
-              $replies = get_json('newsfeed-comments');
-              foreach ($items as $index=>$item) {
-                $reply = $replies[$index]; ?>
-              
+              foreach ($items as $item) {
+                $reply_user = get_user_by_index($item->top_reply->user_id);
+                ?>
+
                 <div>
                   <div class="col-md-6 col-sm-12 b-news-9 b-modal-open">
                     <div style="margin-bottom: 15px;">
@@ -51,25 +51,25 @@
                                 <div class="row">
                                   <div class="col-md-2 b-news-10-0">
                                     <div class="text-center b-news-10">
-                                      <img class="img-responsive img-circle" alt="image" src="<?php echo $reply->user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
+                                      <img class="img-responsive img-circle" alt="image" src="<?php echo $reply_user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
                                     </div>
                                   </div>
                                   <div class="col-md-9" style="padding-left: 0px;">
                                     <div>
                                       <p>
                                         <b class="b-news-11">
-                                          <?php echo $reply->user->first_name ?>
-                                          <?php echo $reply->user->last_name ?>
+                                          <?php echo $reply_user->first_name ?>
+                                          <?php echo $reply_user->last_name ?>
                                         </b>
                                         <span class="gray">
-                                          <?php echo join(' at ', [$reply->user->job_title, $reply->user->company_name]) ?>
+                                          <?php echo join(' at ', [$reply_user->job_title, $reply_user->company_name]) ?>
                                         </span>
                                       </p>
                                     </div>
                                   </div>
                                   <div class="col-md-12 b-news-12" style="padding-right: 15px; padding-left: 15px; padding-top: 10px;">
                                     <p style="font-weight: 400; height: 66px; overflow: hidden;">
-                                      <?php echo $reply->text ?>
+                                      <?php echo $item->top_reply->text ?>
                                     </p>
                                   </div>
                                 </div>
@@ -80,7 +80,7 @@
                               <div>
                                 <div class="row">
                                   <div class="col-md-12 b-news-13">
-                                    <?php echo output_opinion_images($reply->opinion_icons, 'more opinions') ?>
+                                    <?php echo output_reply_images($item->top_reply->reply_icons, 'more opinions') ?>
                                   </div>
                                 </div>
                               </div>
@@ -94,9 +94,7 @@
                 </div>
 
               <?php } ?>
-              
-              
-              
+
 
             </div>
           </div>

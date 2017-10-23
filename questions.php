@@ -39,7 +39,7 @@
 
                           <div class="col-md-4 p-l-0">
                             <select id="question-tags" name="states[]" multiple="multiple">
-                              <?php echo render_qa_tags() ?>
+                              <?php echo render_questions_topics() ?>
                             </select>
                           </div>
 
@@ -107,11 +107,8 @@
 
               <?php
                 $items = get_json('questions');
-                $replies = get_json('questions-replies');
-                foreach ($items as $index=>$item) {
-                  $reply = $replies[$index];
-                  $replyUser = get_user_by_index($reply->user);
-                  ?>
+                foreach ($items as $item) {
+                  $reply_user = get_user_by_index($item->top_reply->user_id); ?>
 
 
                   <div class="panel b-question-9">
@@ -129,25 +126,25 @@
                             <div class="row">
                               <div class="col-md-2 b-news-10-0">
                                 <div class="text-center b-news-10">
-                                  <img class="img-responsive img-circle" alt="image" src="<?php echo $replyUser->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
+                                  <img class="img-responsive img-circle" alt="image" src="<?php echo $reply_user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
                                 </div>
                               </div>
-                              <div class="col-md-9" style="padding-left: 0px;">
+                              <div class="col-md-9" style="padding-left: 0;">
                                 <div>
                                   <p>
                                     <b class="b-news-11">
-                                      <?php echo $replyUser->first_name ?>
-                                      <?php echo $replyUser->last_name ?>
+                                      <?php echo $reply_user->first_name ?>
+                                      <?php echo $reply_user->last_name ?>
                                     </b>
                                     <span class="gray">
-                                        <?php echo join(' at ', [$replyUser->job_title, $replyUser->company_name]) ?>
+                                        <?php echo join(' at ', [$reply_user->job_title, $reply_user->company_name]) ?>
                                       </span>
                                   </p>
                                 </div>
                               </div>
                               <div class="col-md-12 b-news-12" style="padding-right: 15px; padding-left: 15px; padding-top: 10px;">
                                 <p style="font-weight: 400; height: 66px; overflow: hidden;" class="b-question-text">
-                                  <?php echo $reply->text ?>
+                                  <?php echo $item->top_reply->text ?>
                                 </p>
                               </div>
                             </div>
@@ -159,7 +156,7 @@
                           <div>
                             <div class="row">
                               <div class="col-md-12 b-news-13">
-                                <?php echo output_opinion_images($reply->opinion_icons, 'more answers') ?>
+                                <?php echo output_reply_images($item->top_reply->reply_icons, 'more answers') ?>
                               </div>
                             </div>
                           </div>

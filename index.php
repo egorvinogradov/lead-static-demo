@@ -80,14 +80,13 @@
 
 
               <?php
-                $items = get_json('mentors');
+                $items = get_users('stranger');
                 foreach ($items as $item) { ?>
 
                 <div>
                   <div class="col-md-12 col-sm-12">
 
-                    <a href="/users/45/profile">
-                      <!-- <?php echo $item->id ?> -->
+                    <a href="/users/<?php echo $item->index ?>/profile">
                       <div>
                       <div class="panel panel-user-card null">
                         <div class="panel-heading b-mentors-card-8">
@@ -104,7 +103,7 @@
                                 <?php echo join(' at ', [$item->job_title, $item->company_name]) ?>
                               </p>
                               <div class="b-mentors-card-10">
-                                <table class="table-props">
+                                <table class="table-props m-b-20">
                                   <tbody>
                                   <tr>
                                     <td><span class="gray"><i class="fa fa-folder-open"></i></span></td>
@@ -125,7 +124,7 @@
                               </div>
                             </div>
                             <p class="pull-right labels-top-right">
-                              <a href="<?php echo $item->linkedin_profile_link ?>" target="_blank">
+                              <a href="#" target="_blank">
                                 <i class="fa fa-linkedin-square linkedin-color"></i>
                               </a>
                               &nbsp;

@@ -7,7 +7,7 @@
       <div class="modal-content" role="document">
         <div class="modal-header">
           <h4>
-            Let <span class="b-request-name">Joanna</span> know why you to want her to be your mentor:
+            Let <span class="b-request-name">Jenna</span> know why you to want her to be your mentor:
           </h4>
         </div>
         <div class="modal-body">
@@ -33,8 +33,8 @@
               <div class="form-group">
                 <div class="col-md-12">
                   <textarea draggable="false" placeholder="Your message to the mentor (optional)" class="form-control" rows="9">
-Hi, Joanna!
-My name is Jen and I'm a marketing manager at the Mobile Department.
+Hi, Jenna!
+My name is Kate and I'm a Junior Marketing Assistant at the Mobile Department at Lyft.
 
 After a few back and forths in my career, I've come to the understanding that I need a good career advice. So, I've been looking for people with a great experience such as yours.
 Lead suggested that you might help with it. Would it be possible to request your mentorship on this? I would appreciate your help.
@@ -47,7 +47,7 @@ Thank you!
                 <div class="col-md-12">
                   <div class="pull-right">
                     <button class="btn btn-info btn-space b-request-submit">
-                      Ask <span class="b-request-name">Joanna</span> to become your mentor
+                      Ask <span class="b-request-name">Jenna</span> to become your mentor
                     </button>
                     <button class="btn btn-default b-modal-close">Cancel</button>
                   </div>

@@ -2,7 +2,7 @@
 
 <?php
 $user_id = $include_data['user_id'];
-$item = get_json('mentors')[$user_id];
+$item = get_user_by_index($user_id);
 ?>
 
 <?php include_file('includes/header') ?>
@@ -23,13 +23,13 @@ $item = get_json('mentors')[$user_id];
               <div class="user-mentors">Mentors</div>
               <div>
                 <div class="opinion-images">
-                  <?php echo output_opinion_images([7,8,9,10,11], 'more', 'and') ?>
+                  <?php echo output_reply_images([7,8,9,10,12], 'and 6 more') ?>
                 </div>
               </div>
               <div class="user-mentees">Mentees</div>
               <div>
                 <div class="opinion-images">
-                  <?php echo output_opinion_images([3,4,5,15,18], 'more', 'and') ?>
+                  <?php echo output_reply_images([3,4,5,15,18], 'and 1 more') ?>
                 </div>
               </div>
             </div>
@@ -49,7 +49,9 @@ $item = get_json('mentors')[$user_id];
                     <?php echo $item->first_name ?>
                     <?php echo $item->last_name ?>
                   </b>
-                  <span class="m-l-5 label label-rouded label-success profile-card-label">Mentor</span>
+                  <?php if ( $item->is_mentor ) { ?>
+                    <span class="m-l-5 label label-rouded label-success profile-card-label">Mentor</span>
+                  <?php } ?>
                   <p style="font-weight: normal; text-transform: none;" class="b-mentors-card-9">
                     <?php echo join(' at ', [$item->job_title, $item->company_name]) ?>
                   </p>
@@ -87,7 +89,7 @@ $item = get_json('mentors')[$user_id];
                         </button>
                       <?php } ?>
 
-                      <a class="btn btn-info m-l-15" href="/users/45/messages">
+                      <a class="btn btn-info m-l-15" href="/users/<?php echo $item->index ?>/messages">
                         Send a Message
                       </a>
                     </div>
@@ -98,12 +100,12 @@ $item = get_json('mentors')[$user_id];
 
                   <ul class="nav nav-tabs">
                     <li class="<?php echo $include_data['tab'] == 'profile' ? 'active' : '' ?>">
-                      <a href="/users/45/profile"><?php echo $item->first_name ?>'s Feed</a>
+                      <a href="/users/<?php echo $item->index ?>/profile"><?php echo $item->first_name ?>'s Feed</a>
                     </li>
 
                     <?php if ($item->has_messages || $include_data['tab'] == 'messages') { ?>
                       <li class="<?php echo $include_data['tab'] == 'messages' ? 'active' : '' ?>">
-                        <a href="/users/45/messages">
+                        <a href="/users/<?php echo $item->index ?>/messages">
                           Messages
                           <?php if ( $item->unread_messages_count ) { ?>
                             <span class="label label-success label-rounded b-profile-40">
@@ -116,13 +118,12 @@ $item = get_json('mentors')[$user_id];
 
                     <?php if ($item->relationship == 'mentor' || $item->relationship == 'mentee' || $include_data['tab'] == 'rating') { ?>
                       <li class="<?php echo $include_data['tab'] == 'rating' ? 'active' : '' ?>">
-                        <a href="/users/45/rating">Rating</a>
+                        <a href="/users/<?php echo $item->index ?>/rating">Rating</a>
                       </li>
                     <?php } ?>
                   </ul>
                 </div>
               </div>
-
 
               <div class="col-md-12 col-xs-12">
                 <div class="white-box b-profile-22">

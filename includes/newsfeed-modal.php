@@ -57,16 +57,19 @@ $item = $items[$include_data['newsfeed_id']];
                     </div>
 
 
-                    <?php foreach ($replies as $index=>$reply) { ?>
+                    <?php
+                      foreach ($replies as $reply) {
+                        $reply_user = get_user_by_index($reply->user_id);
+                        ?>
 
-                      <div class="<?php echo $index ? '' : 'user-pick-bg' ?>">
+                      <div class="<?php echo $reply->is_readers_pick ? 'user-pick-bg' : '' ?>">
                         <div class="lead-delimiter"></div>
                         <br>
                         <div>
                           <div class="row">
 
                             <div class="col-md-12 gray">
-                              <?php if (!$index) { ?>
+                              <?php if ($reply->is_readers_pick) { ?>
                                 <p>
                                   <b>Readers` pick</b>
                                   <i class="m-l-5 fa fa-check-circle"></i>
@@ -77,20 +80,22 @@ $item = $items[$include_data['newsfeed_id']];
                             <div class="col-md-12">
 
                               <div class="comment-card-img b-modal-14">
-                                <img class="img-responsive img-circle" alt="image" src="<?php echo $reply->user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
+                                <img class="img-responsive img-circle" alt="image" src="<?php echo $reply_user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
                               </div>
 
                               <div class="comment-card-name">
                                 <p class="b-modal-13">
-                                  <a href="/users/45/profile">
+                                  <a href="/users/<?php echo $reply_user->index ?>/profile">
                                     <b>
-                                      <?php echo $reply->user->first_name ?>
-                                      <?php echo $reply->user->last_name ?>
+                                      <?php echo $reply_user->first_name ?>
+                                      <?php echo $reply_user->last_name ?>
                                     </b>
-                                    <span class="label label-rouded label-success profile-card-label">Mentor</span>
+                                    <?php if ( $reply_user->is_mentor ) { ?>
+                                      <span class="label label-rouded label-success profile-card-label">Mentor</span>
+                                    <?php } ?>
                                     <br>
                                     <span class="gray">
-                                    <?php echo join(' at ', [$reply->user->job_title, $reply->user->company_name]) ?>
+                                    <?php echo join(' at ', [$reply_user->job_title, $reply_user->company_name]) ?>
                                       <span class="m-l-5 m-r-5">•</span>
                                       <?php echo date("m/d/Y", strtotime($reply->timestamp)) ?>
                                   </span>

@@ -1,170 +1,52 @@
 [
   {
-    "opinion_icons": [3,4,5],
-    "id": 53,
-    "user": {
-      "id": 45,
-      "first_name": "Adriana",
-      "last_name": "Gascoigne",
-      "job_title": "Founder and CEO",
-      "birthdate": "1986-09-18",
-      "picture_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAMdAAAAJDcwOGY3ZmQzLTA1YTMtNDlmYy05OWJhLWI3NWI2NjM4MGYwYg.jpg",
-      "location": {
-        "name": "San Francisco Bay Area",
-        "latitude": 37.7884969,
-        "longitude": -122.3558473
-      },
-      "linkedin_profile_link": "https://www.linkedin.com/in/adrianagascoigne/",
-      "company_name": "Girls in Tech, Inc.",
-      "location_fallback": "San Francisco Bay Area",
-      "industry": "Marketing and Advertising",
-      "is_mentor": true,
-      "second_name": "Gascoigne"
-    },
-    "timestamp": "2017-09-27T21:06:31.434038Z",
-    "text": "Okay, I’m going to give you a different answer here. You may like it if you are open to new ways of approaching problems and I can tell you that it works because it’s human biology and by hacking it you can remove the tensions and become like the way you’re at ease in your own room, working alone.",
+    "user_id": 1,
+    "vote_score": 21,
+    "timestamp": "2017-09-27T20:30:15.567626Z",
+    "is_readers_pick": true,
+    "text": "I was a skeptic of the book, as a lower working class female with all the odds against me I wondered how she could possibly relate. Her points are free of economical differences in general. I'd say nearly every single topic deeply applied to me, and speaks directly to me. As a Mother of boys, I do not want to downsize their success for little girls. I want to bring them into a revised state of being where they will work along side, lift up and celebrate their future wife and daughters as equals, be strong willed and honorable Men who are the partners and protectors of their women because that is what is right, and that is what is sacred. The reptilian male dominated world is fading, the genders (all however many of them there are) should rise together and we should be enlightened as a species."
+  },
+  {
+    "user_id": 2,
+    "vote_score": 0,
+    "timestamp": "2017-09-27T20:42:15.567626Z",
+    "text": "It is very normal that a woman is called leftover when she don't marry someone when 29; actually, i am 26 now, and everyday people around keep telling me i need marry someone but shouldn't work so hard because finally i will marry someone and end up in a family raising up a Child, this is the same situation that when i was little girl and people kept persuading my parents shouldn't offer me education because i will marry someone and don't belongs to the family any more.Lucky that i survive"
+  },
+  {
+    "user_id": 3,
+    "vote_score": 12,
+    "timestamp": "2017-09-27T20:01:15.567626Z",
+    "text": "I fear your heart is well cocooned in some very deep pain and hurt. Your resentment towards women, your callous and offensive words are demonstrative of it. I hope you find the peace you need and can move forward with open eyes. Sending love your way."
+  },
+  {
+    "user_id": 4,
+    "vote_score": 5,
+    "timestamp": "2017-09-27T19:59:15.567626Z",
+    "text": "what i want to ask today is: my friend got pregant four months ago, and her manager and boss try to get her out of the company, as the law, women will get at least 158 days away since baby come,and the boss don't want to pay the salary during these days, but they can't fire the lady, so they adjust my friend's position and do different work, sometimes even put her into a printer room or just let her sit in the front of the workplace and do nothing, they do this to force my friend to quit the job herself. what my friend can do?"
+  },
+  {
+    "user_id": 5,
     "vote_score": 3,
-    "num_vote_up": 0,
-    "num_vote_down": 0
+    "timestamp": "2017-09-27T20:30:15.567626Z",
+    "is_readers_pick": true,
+    "text": "I was a skeptic of the book, as a lower working class female with all the odds against me I wondered how she could possibly relate. Her points are free of economical differences in general. I'd say nearly every single topic deeply applied to me, and speaks directly to me. As a Mother of boys, I do not want to downsize their success for little girls. I want to bring them into a revised state of being where they will work along side, lift up and celebrate their future wife and daughters as equals, be strong willed and honorable Men who are the partners and protectors of their women because that is what is right, and that is what is sacred. The reptilian male dominated world is fading, the genders (all however many of them there are) should rise together and we should be enlightened as a species."
   },
   {
-    "opinion_icons": [6,7,8],
-    "id": 51,
-    "user": {
-      "id": 33,
-      "first_name": "Miriam",
-      "last_name": "Mozias",
-      "job_title": "Advisory Board Member",
-      "birthdate": "1996-05-09",
-      "picture_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAfaAAAAJGI3MDY5ZTc1LWRjN2ItNGNkMS04MzU1LWU4ZjFkMTJkMmNkZg.jpg",
-      "location": {
-        "name": "Cambridge, Massachusetts",
-        "latitude": 42.3750997,
-        "longitude": -71.1056157
-      },
-      "linkedin_profile_link": "https://www.linkedin.com/in/miriammozias/",
-      "company_name": "Girls in Tech, Inc.",
-      "location_fallback": "Cambridge, Massachusetts",
-      "industry": "Information Services",
-      "is_mentor": true,
-      "second_name": "Mozias"
-    },
-    "timestamp": "2017-09-27T21:04:29.776558Z",
-    "text": "If you mean a job as someone who applies off-the-shelf tools (e.g., libraries from R, or scikit-learn, or Dato), it might suffice to take two or three ML-related classes during your undergrad years, or one of the many online MOOCs (eg such as https://www.coursera.org/learn.",
-    "vote_score": 0,
-    "num_vote_up": 0,
-    "num_vote_down": 0
+    "user_id": 6,
+    "vote_score": 1,
+    "timestamp": "2017-09-27T20:42:15.567626Z",
+    "text": "It is very normal that a woman is called leftover when she don't marry someone when 29; actually, i am 26 now, and everyday people around keep telling me i need marry someone but shouldn't work so hard because finally i will marry someone and end up in a family raising up a Child, this is the same situation that when i was little girl and people kept persuading my parents shouldn't offer me education because i will marry someone and don't belongs to the family any more.Lucky that i survive"
   },
   {
-    "opinion_icons": [9,10,11],
-    "id": 39,
-    "user": {
-      "id": 31,
-      "first_name": "Joanna",
-      "last_name": "Furlong",
-      "job_title": "Girls in Tech, Inc.",
-      "birthdate": "1986-12-13",
-      "picture_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwHAAAAJDFkNzczZTZhLTY4YjYtNDVlZi1iNGNmLTk1ZmM5M2EyMWNiMA.jpg",
-      "location": {
-        "name": "San Diego, California",
-        "latitude": 32.7174209,
-        "longitude": -117.1627714
-      },
-      "linkedin_profile_link": "https://www.linkedin.com/in/joannabrinjak/",
-      "company_name": null,
-      "location_fallback": "San Diego, California",
-      "industry": "Consumer Goods",
-      "is_mentor": true,
-      "second_name": "Furlong"
-    },
-    "timestamp": "2017-09-27T20:59:15.567626Z",
-    "text": "Interviewing at Google is also like that.  A candidate may succeed because he/she prepares a lot more for Google than other company interviews, happened to get lucky by being asked questions right inside their area of expertise, happened to connect really well with the interviewers that day, is especially adept at the type of interview questions that Google asks, etc.",
+    "user_id": 7,
     "vote_score": 0,
-    "num_vote_up": 0,
-    "num_vote_down": 0
+    "timestamp": "2017-09-27T20:01:15.567626Z",
+    "text": "I fear your heart is well cocooned in some very deep pain and hurt. Your resentment towards women, your callous and offensive words are demonstrative of it. I hope you find the peace you need and can move forward with open eyes. Sending love your way."
   },
   {
-    "opinion_icons": [3,4,5],
-    "id": 53,
-    "user": {
-      "id": 45,
-      "first_name": "Adriana",
-      "last_name": "Gascoigne",
-      "job_title": "Founder and CEO",
-      "birthdate": "1986-09-18",
-      "picture_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAMdAAAAJDcwOGY3ZmQzLTA1YTMtNDlmYy05OWJhLWI3NWI2NjM4MGYwYg.jpg",
-      "location": {
-        "name": "San Francisco Bay Area",
-        "latitude": 37.7884969,
-        "longitude": -122.3558473
-      },
-      "linkedin_profile_link": "https://www.linkedin.com/in/adrianagascoigne/",
-      "company_name": "Girls in Tech, Inc.",
-      "location_fallback": "San Francisco Bay Area",
-      "industry": "Marketing and Advertising",
-      "is_mentor": true,
-      "second_name": "Gascoigne"
-    },
-    "timestamp": "2017-09-27T21:06:31.434038Z",
-    "text": "Okay, I’m going to give you a different answer here. You may like it if you are open to new ways of approaching problems and I can tell you that it works because it’s human biology and by hacking it you can remove the tensions and become like the way you’re at ease in your own room, working alone.",
+    "user_id": 8,
     "vote_score": 0,
-    "num_vote_up": 0,
-    "num_vote_down": 0
-  },
-  {
-    "opinion_icons": [6,7,8],
-    "id": 51,
-    "user": {
-      "id": 33,
-      "first_name": "Miriam",
-      "last_name": "Mozias",
-      "job_title": "Advisory Board Member",
-      "birthdate": "1996-05-09",
-      "picture_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAfaAAAAJGI3MDY5ZTc1LWRjN2ItNGNkMS04MzU1LWU4ZjFkMTJkMmNkZg.jpg",
-      "location": {
-        "name": "Cambridge, Massachusetts",
-        "latitude": 42.3750997,
-        "longitude": -71.1056157
-      },
-      "linkedin_profile_link": "https://www.linkedin.com/in/miriammozias/",
-      "company_name": "Girls in Tech, Inc.",
-      "location_fallback": "Cambridge, Massachusetts",
-      "industry": "Information Services",
-      "is_mentor": true,
-      "second_name": "Mozias"
-    },
-    "timestamp": "2017-09-27T21:04:29.776558Z",
-    "text": "If you mean a job as someone who applies off-the-shelf tools (e.g., libraries from R, or scikit-learn, or Dato), it might suffice to take two or three ML-related classes during your undergrad years, or one of the many online MOOCs (eg such as https://www.coursera.org/learn.",
-    "vote_score": 0,
-    "num_vote_up": 0,
-    "num_vote_down": 0
-  },
-  {
-    "opinion_icons": [9,10,11],
-    "id": 39,
-    "user": {
-      "id": 31,
-      "first_name": "Joanna",
-      "last_name": "Furlong",
-      "job_title": "Girls in Tech, Inc.",
-      "birthdate": "1986-12-13",
-      "picture_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwHAAAAJDFkNzczZTZhLTY4YjYtNDVlZi1iNGNmLTk1ZmM5M2EyMWNiMA.jpg",
-      "location": {
-        "name": "San Diego, California",
-        "latitude": 32.7174209,
-        "longitude": -117.1627714
-      },
-      "linkedin_profile_link": "https://www.linkedin.com/in/joannabrinjak/",
-      "company_name": null,
-      "location_fallback": "San Diego, California",
-      "industry": "Consumer Goods",
-      "is_mentor": true,
-      "second_name": "Furlong"
-    },
-    "timestamp": "2017-09-27T20:59:15.567626Z",
-    "text": "Interviewing at Google is also like that.  A candidate may succeed because he/she prepares a lot more for Google than other company interviews, happened to get lucky by being asked questions right inside their area of expertise, happened to connect really well with the interviewers that day, is especially adept at the type of interview questions that Google asks, etc.",
-    "vote_score": 0,
-    "num_vote_up": 0,
-    "num_vote_down": 0
+    "timestamp": "2017-09-27T19:59:15.567626Z",
+    "text": "what i want to ask today is: my friend got pregant four months ago, and her manager and boss try to get her out of the company, as the law, women will get at least 158 days away since baby come,and the boss don't want to pay the salary during these days, but they can't fire the lady, so they adjust my friend's position and do different work, sometimes even put her into a printer room or just let her sit in the front of the workplace and do nothing, they do this to force my friend to quit the job herself. what my friend can do?"
   }
 ]

@@ -13,6 +13,9 @@ $CONFIG = array(
 header_remove('X-Powered-By');
 
 
+$CONFIG['current_user'] = get_users('self')[0];
+
+
 /**
  * FUNCTIONS
  */
@@ -41,19 +44,36 @@ function get_json($name){
 }
 
 
-function output_opinion_images($ids, $suffix, $prefix = null){
-  $users = get_json('mentors');
+function get_users($relationship = null){
+  $users = get_json('users');
+  $users = array_map(function($user, $index){
+    $user->index = $index + 45;
+    return $user;
+  }, $users, array_keys($users));
+  if ($relationship) {
+    return array_filter($users, function($user) use ($relationship){
+      return $user->relationship === $relationship;
+    });
+  }
+  else {
+    return $users;
+  }
+};
+
+
+function output_reply_images($ids, $suffix){
+  $users = get_users(null);
   $imgs = array_map(function($id) use ($users){
     $url = $users[$id]->picture_url;
-    return '<img class="img-responsive img-circle" alt="image" src="' . $url . '">';
+    return '<img class="img-responsive img-circle" src="' . $url . '">';
   }, $ids);
-  $count_str = $suffix ? '<div class="opinion-count gray">' . $prefix . ' ' .  count($ids) . ' ' . $suffix . '</div>' : '';
+  $count_str = $suffix ? '<div class="opinion-count gray">' . $suffix . '</div>' : '';
   return '<div class="opinion-images">' . join('', $imgs) . '</div>' . $count_str;
 }
 
 
-function render_qa_tags(){
-  $categories = get_json('job-titles');
+function render_questions_topics(){
+  $categories = get_json('questions-topics');
   $categories_str_list = array_map(function($category, $i){
     $titles_str_list = array_map(function($title, $j) use ($i) {
       return '<option value="' . $i . '-' . $j . '">' . join(' ', $title) . '</option>';
@@ -64,5 +84,5 @@ function render_qa_tags(){
 }
 
 function get_user_by_index($index){
-  return get_json('mentors')[$index];
+  return get_users()[$index];
 }

@@ -1,22 +1,42 @@
 [
   {
-    "id": 1,
-    "title": "What is your work life balance like? What happens if you are running late for work one day?"
+    "title": "What is your work life balance like? What happens if you are running late for work one day?",
+    "top_reply":   {
+      "user_id": 1,
+      "reply_icons": [3, 4, 5],
+      "text": "Let's talk about running late. In my experience so far (>2.5 years) there really is no such thing as 'running late' unless you're committed to be in a meeting, and you're a crucial part of it. If you're actually not in the office or available to participate then, that's a problem. But guess what? You'll probably know this is coming at least a half hour before it happens. Ping the relevant people on the meeting, say 'Hey I completely whiffed on this one -- I'm not going to make it. Can we reschedule?'"
+    }
   },
   {
-    "id": 2,
-    "title": "What is the difference between a programmer, a good programmer and a great programmer?"
+    "title": "What is the difference between a programmer, a good programmer and a great programmer?",
+    "top_reply":   {
+      "user_id": 2,
+      "reply_icons": [6, 7, 8],
+      "text": "Great developers are rare. Their productivity is 3 times that of an average developer and 10 times that of a bad developer (Reference: The Mythical man month). The top 1% developers in the world don’t just write solid code but have important intangible traits."
+    }
   },
   {
-    "id": 3,
-    "title": "I'm a software engineer with 20 years experience but I can't think fast enough in coding interview. What should I do?"
+    "title": "I'm a software engineer with 20 years experience but I can't think fast enough in coding interview. What should I do?",
+    "top_reply":   {
+      "user_id": 3,
+      "reply_icons": [9, 10, 11],
+      "text": "Okay, I’m going to give you a different answer here. You may like it if you are open to new ways of approaching problems and I can tell you that it works because it’s human biology and by hacking it you can remove the tensions and become like the way you’re at ease in your own room, working alone."
+    }
   },
   {
-    "id": 4,
-    "title": "How do I get a job as a talk radio host?"
+    "title": "How do I get a job as a talk radio host?",
+    "top_reply":   {
+      "user_id": 4,
+      "reply_icons": [12, 13, 14],
+      "text": "College isn’t really the best route for radio. A lot of stations aren’t paying a livable wage anymore. Most people start weekends. You can go to school, and it might allow you to advance your career faster, but you’ll be in massive debt for a long time. Most people looking to hire on-air talent care more about experience rather than a degree."
+    }
   },
   {
-    "id": 5,
-    "title": "How should you start a career in Machine Learning?"
+    "title": "How should you start a career in Machine Learning?",
+    "top_reply":   {
+      "user_id": 5,
+      "reply_icons": [13, 14, 15],
+      "text": "If you mean a job as someone who applies off-the-shelf tools (e.g., libraries from R, or scikit-learn, or Dato), it might suffice to take two or three ML-related classes during your undergrad years, or one of the many online MOOCs (eg such as https://www.coursera.org/learn."
+    }
   }
 ]

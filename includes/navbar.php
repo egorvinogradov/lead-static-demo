@@ -1,4 +1,11 @@
 <?php include_once '../config.php' ?>
+<?php
+
+$current_user = get_global_var('current_user');
+$notification_user_1 = get_user_by_index(3);
+$notification_user_2 = get_user_by_index(16);
+
+?>
 
 <div>
   <nav class="navbar navbar-default navbar-static-top m-b-0">
@@ -6,8 +13,6 @@
       <div class="top-left-part"><a class="logo" href="/"><b style="font-weight: 500; letter-spacing: 0.05em;">LEAD</b></a>
       </div>
       <ul class="nav navbar-top-links navbar-right pull-right header-layout-right-block">
-
-
 
         <li class="dropdown b-notification-dropdown">
           <a class="b-notification-0 dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#" aria-expanded="false">
@@ -24,13 +29,15 @@
 
             <li>
               <div class="message-center">
-                <a href="/users/45/messages">
+                <a href="/users/<?php echo $notification_user_1->index ?>/profile">
                   <div class="user-img">
-                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwHAAAAJDFkNzczZTZhLTY4YjYtNDVlZi1iNGNmLTk1ZmM5M2EyMWNiMA.jpg" alt="user" class="img-circle">
+                    <img src="<?php echo $notification_user_1->picture_url ?>" alt="user" class="img-circle">
                     <span class="profile-status online pull-right bg-danger"></span>
                   </div>
                   <div class="mail-contnet">
-                    <h5 class="b-notification-2">Jenna Stone</h5>
+                    <h5 class="b-notification-2">
+                      <?php echo $notification_user_1->first_name . ' ' . $notification_user_1->last_name ?>
+                    </h5>
                     <span class="b-notification-3 mail-desc">Approved your mentorship request</span>
                   </div>
                 </a>
@@ -39,15 +46,17 @@
 
             <li>
               <div class="message-center">
-                <a class="b-notification-5" href="#">
+                <a class="b-notification-5" href="/users/<?php echo $notification_user_2->index ?>/profile">
                   <div class="user-img">
-                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwHAAAAJDFkNzczZTZhLTY4YjYtNDVlZi1iNGNmLTk1ZmM5M2EyMWNiMA.jpg" alt="user" class="img-circle">
+                    <img src="<?php echo $notification_user_2->picture_url ?>" alt="user" class="img-circle">
                     <span class="profile-status online pull-right bg-danger"></span>
                   </div>
                   <div class="mail-contnet">
-                    <h5 class="b-notification-2">Jenna Stone</h5>
+                    <h5 class="b-notification-2">
+                      <?php echo $notification_user_2->first_name . ' ' . $notification_user_2->last_name ?>
+                    </h5>
                     <span class="b-notification-3 mail-desc">
-                      Please rate your experience <span class="text-nowrap">with Jenna</span>
+                      Asked you to become her mentor
                     </span>
                   </div>
                 </a>
@@ -65,7 +74,7 @@
             <div class="dropdown btn-group">
               <button id="profile-card" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span>
-                  Jen Picard
+                  <?php echo $current_user->first_name . ' ' . $current_user->last_name ?>
                   <span>&nbsp;
                     <span class="label label-rouded label-success profile-card-label">Mentor</span>
                   </span>
@@ -73,12 +82,12 @@
                 <span class="caret"></span>
               </button>
               <ul role="menu" class="dropdown-menu" aria-labelledby="profile-card">
-                <li><a href="/users/45/profile">My Profile</a></li>
-                <li><a>Settings</a></li>
+                <li><a href="/my-profile">My Profile</a></li>
+                <li><a href="#">Settings</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="/dashboard">Dashboard</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a>Logout</a></li>
+                <li><a href="#">Logout</a></li>
               </ul>
             </div>
           </div>

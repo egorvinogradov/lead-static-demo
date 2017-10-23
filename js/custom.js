@@ -8,6 +8,11 @@ $(window).on('keyup', function(e){
 });
 
 
+$('a[href=#]').on('click', function(e){
+  e.preventDefault();
+});
+
+
 
 /** NOTIFICATIONS **/
 
@@ -112,11 +117,13 @@ $('.b-question-submit').on('click', function(e){
     var question = $('.b-question-self');
     question.show();
     setTimeout(function(){
-      question
-        .addClass('b-question-self--expanded')
-        .find('.b-question-text')
-        .text( $('#question-textarea').val() );
-
+      question.addClass('b-question-self--expanded');
+      var customText = $('#question-textarea').val();
+      if (customText) {
+        question
+          .find('.b-question-text')
+          .text(customText);
+      }
       questionContainer.removeClass('active');
       questionTextArea.val('');
     }, 100);
