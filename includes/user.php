@@ -75,21 +75,25 @@ $item = get_json('mentors')[$user_id];
                   </div>
 
 
-                  <div class="m-b-30">
-                    <?php if ($item->relationship == 'mentor' || $item->relationship == 'mentee' || $include_data['tab'] == 'rating') { ?>
-                      <button class="btn btn-default">
-                        <?php echo $item->first_name ?> is your <?php echo $item->relationship ?>
-                      </button>
-                    <?php } else { ?>
-                      <button class="btn btn-info b-request-mentorship-button">
-                        Ask <?php echo $item->first_name ?> to become your mentor
-                      </button>
-                    <?php } ?>
+                  <?php if ( !$include_data['is_my_profile'] ) { ?>
+                    <div class="m-b-30">
+                      <?php if ($item->relationship == 'mentor' || $item->relationship == 'mentee' || $include_data['tab'] == 'rating') { ?>
+                        <button class="btn btn-default">
+                          <?php echo $item->first_name ?> is your <?php echo $item->relationship ?>
+                        </button>
+                      <?php } else { ?>
+                        <button class="btn btn-info b-request-mentorship-button">
+                          Ask <?php echo $item->first_name ?> to become your mentor
+                        </button>
+                      <?php } ?>
 
-                    <a class="btn btn-info m-l-15" href="/users/45/messages">
-                      Send a Message
-                    </a>
-                  </div>
+                      <a class="btn btn-info m-l-15" href="/users/45/messages">
+                        Send a Message
+                      </a>
+                    </div>
+                  <?php } else { ?>
+                    <br>
+                  <?php } ?>
 
 
                   <ul class="nav nav-tabs">
