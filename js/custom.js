@@ -156,3 +156,32 @@ function initializeMessagesTimestamps(selector){
 }
 
 initializeMessagesTimestamps('.b-message-datetime');
+
+
+
+/** REQUESTS **/
+
+function hideMentorshipRequest(){
+  var message = $('.b-profile-request-message');
+  message.addClass('b-profile-request-message--collapsed');
+  setTimeout(function(){
+    message.addClass('hidden');
+    $('.b-profile-request-counter').addClass('hidden');
+    $('.b-profile-request-label').removeClass('hidden');
+  }, 300);
+}
+
+$('.b-profile-request-accept').on('click', function(e){
+  var button = $(e.currentTarget);
+  button.text('Loading...');
+  setTimeout(function(){
+    button.text('Done!');
+    setTimeout(function(){
+      hideMentorshipRequest();
+    }, 300);
+  }, 500);
+});
+
+$('.b-profile-request-reject').on('click', function(e){
+  setTimeout(hideMentorshipRequest, 300);
+});

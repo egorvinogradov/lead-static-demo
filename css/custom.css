@@ -152,6 +152,7 @@
 
 .btn-success,
 .btn-success:active,
+.btn-success:focus,
 .btn-success:hover {
   background-color: #48b383;
   border-color: #48b383;
@@ -738,4 +739,51 @@ html {
   width: 30px !important;
   height: 30px !important;
   margin-top: 3px;
+}
+
+.b-profile-request-0 {
+  /*background: #00C292;*/
+  font-size: 14px;
+}
+
+.b-profile-request-1 {
+  font-size: 15px;
+}
+
+.b-profile-request-2 {
+  font-size: 15px !important;
+}
+
+.b-profile-request-3 {
+  padding-left: 38px;
+  position: relative;
+}
+
+.b-profile-request-3 p {
+  line-height: 21px;
+  margin-bottom: 8px;
+}
+
+.b-profile-request-3:before {
+  content: '‘‘';
+  font-family: Arial, sans-serif;
+  display: block;
+  opacity: .2;
+  font-size: 54px;
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.b-profile-request-message {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: ease 300ms;
+}
+
+.b-profile-request-message--collapsed {
+  opacity: 0;
 }

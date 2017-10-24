@@ -14,9 +14,36 @@ $item = get_users_by_ids($user_id);
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
+
+        <?php if ( $item->mentorship_request_sent ) { ?>
+          <div class="b-profile-request-0 white-box clearfix m-b-20 b-profile-request-message">
+            <p class="font-bold m-b-15 b-profile-request-1">
+              <?php echo $item->first_name ?> sent you a mentorship request
+            </p>
+            <div class="b-profile-request-3">
+              <p>Hi, Kate!</p>
+              <p>
+                My name is Sophia, I went to the same school as you, University of Wisconsin–Madison, and recently graduated.
+                This is my first job after graduation and I'm looking for people with experience such as yours who could give me a piece of advice how to get started the right way.
+              </p>
+              <p>
+                Lead suggested that you might help with it. Would it be possible to request your mentorship on this? I would appreciate your help.
+                <br>
+                Thank you!
+              </p>
+            </div>
+            <hr>
+            <div class="pull-right btn-bottom-right2 m-r-0">
+              <button class="btn btn-success green m-r-20 b-profile-request-accept">
+                Yes, Become <?php echo $item->first_name ?>'s Mentor
+              </button>
+              <button class="btn btn-default b-profile-request-reject">Reject Request</button>
+            </div>
+          </div>
+        <?php } ?>
+
         <div class="white-box">
           <div class="row">
-
 
             <div class="col-md-3 user-left">
               <img class="img-responsive " alt="User image" src="<?php echo $item->picture_url ?>">
@@ -79,16 +106,17 @@ $item = get_users_by_ids($user_id);
                   <?php if ( !$include_data['is_my_profile'] ) { ?>
                     <div class="m-b-30">
                       <?php if ($item->relationship == 'mentor' || $item->relationship == 'mentee' || $include_data['tab'] == 'rating') { ?>
-                        <button class="btn btn-default">
+                        <button
+                          class="btn btn-default m-r-15 b-profile-request-label <?php echo $item->mentorship_request_sent ? 'hidden' : '' ?>">
                           <?php echo $item->first_name ?> is your <?php echo $item->relationship ?>
                         </button>
                       <?php } else { ?>
-                        <button class="btn btn-info b-request-mentorship-button">
+                        <button class="btn btn-info b-request-mentorship-button m-r-15">
                           Ask <?php echo $item->first_name ?> to become your mentor
                         </button>
                       <?php } ?>
 
-                      <a class="btn btn-info m-l-15" href="/users/<?php echo $item->index ?>/messages">
+                      <a class="btn btn-info" href="/users/<?php echo $item->index ?>/messages">
                         Send a Message
                       </a>
                     </div>
@@ -99,7 +127,9 @@ $item = get_users_by_ids($user_id);
 
                   <ul class="nav nav-tabs">
                     <li class="<?php echo $include_data['tab'] == 'profile' ? 'active' : '' ?>">
-                      <a href="/users/<?php echo $item->index ?>/profile"><?php echo $item->first_name ?>'s Feed</a>
+                      <a href="/users/<?php echo $item->index ?>/profile">
+                        <?php echo ($include_data['is_my_profile'] ? 'Your' : $item->first_name . '\'s') . ' Feed' ?>
+                      </a>
                     </li>
                     <li class="<?php echo $include_data['tab'] == 'mentors' ? 'active' : '' ?>">
                       <a href="/users/<?php echo $item->index ?>/mentors">Mentors</a>

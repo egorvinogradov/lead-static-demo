@@ -217,6 +217,43 @@
     "mentees": [17, 18]
   },
   {
+    "first_name": "Charles",
+    "last_name": "Rios",
+    "job_title": "Senior Sales & Marketing Executive",
+    "company_name": "Lyft",
+    "industry": "Information Technology & Services",
+    "location": {
+      "name": "San Francisco, CA"
+    },
+    "picture_url": "/data/photos/users/14.jpg",
+    "is_mentor": true,
+    "relationship": "mentor",
+    "already_rated": false,
+    "has_messages": false,
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
+  },
+  {
+    "first_name": "Barbara",
+    "last_name": "Ong",
+    "job_title": "Sr. Marketing Demand Generation",
+    "company_name": "Lyft",
+    "industry": "Information Technology & Services",
+    "location": {
+      "name": "San Francisco, CA"
+    },
+    "picture_url": "/data/photos/users/15.jpg",
+    "is_mentor": true,
+    "relationship": "mentor",
+    "already_rated": false,
+    "has_messages": false,
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
+  },
+
+  {
     "first_name": "Terresa",
     "last_name": "Pierce",
     "job_title": "Field Marketing Manager - EMEA",
@@ -253,47 +290,11 @@
     "mentees": [17, 18]
   },
   {
-    "first_name": "Charles",
-    "last_name": "Rios",
-    "job_title": "Senior Sales & Marketing Executive",
-    "company_name": "Lyft",
-    "industry": "Information Technology & Services",
-    "location": {
-      "name": "San Francisco, CA"
-    },
-    "picture_url": "/data/photos/users/14.jpg",
-    "is_mentor": true,
-    "relationship": "mentor",
-    "already_rated": false,
-    "has_messages": false,
-    "unread_messages_count": 0,
-    "mentors": [11, 12, 13, 14, 15],
-    "mentees": [17, 18]
-  },
-  {
-    "first_name": "Barbara",
-    "last_name": "Ong",
-    "job_title": "Sr. Marketing Demand Generation",
-    "company_name": "Lyft",
-    "industry": "Information Technology & Services",
-    "location": {
-      "name": "San Francisco, CA"
-    },
-    "picture_url": "/data/photos/users/15.jpg",
-    "is_mentor": true,
-    "relationship": "mentor",
-    "already_rated": false,
-    "has_messages": false,
-    "unread_messages_count": 0,
-    "mentors": [11, 12, 13, 14, 15],
-    "mentees": [17, 18]
-  },
-  {
     "first_name": "Sophia",
     "last_name": "Gardner",
     "job_title": "Junior Marketing Assistant",
-    "company_name": "test",
-    "industry": "Lyft",
+    "company_name": "Lyft",
+    "industry": "Information Technology & Services",
     "location": {
       "name": "San Francisco, CA"
     },

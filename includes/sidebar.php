@@ -27,7 +27,7 @@
         <li>
           <a class="<?php echo $include_data['tab'] === 'my-mentees' ? 'active' : '' ?>" href="/my-mentees"><i class="fa fa-support icon-padding" style="font-size: 16px;"></i>
             My Mentees
-            <b class="label label-success label-rounded pull-right">1</b>
+            <b class="label label-success label-rounded pull-right b-profile-request-counter">1</b>
           </a>
         </li>
         <li>
