@@ -69,7 +69,7 @@
                 <div class="form-group m-b-15">
                   <div class="col-sm-12 text-center">
                     <button type="submit" class="btn btn-info btn-block">Search</button>
-                    <a href="/" class="btn btn-default btn-block m-t-10">Clear Filters</a>
+                    <a href="/" class="btn btn-default btn-block m-t-10">Clear</a>
                   </div>
                 </div>
               </form>
@@ -82,6 +82,7 @@
                 $users = get_users('stranger');
                 if ($_GET['all_mentors']) {
                   $users = get_users('outsider');
+                  $users = array_merge($users, $users);
                 }
                 include_file('includes/user-list', [
                   users => $users,

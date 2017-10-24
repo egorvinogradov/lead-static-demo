@@ -24,7 +24,7 @@
 }
 
 .b-app img {
-  image-rendering: -webkit-optimize-contrast;
+  /*image-rendering: -webkit-optimize-contrast;*/
 }
 
 .navbar-header .profile-pic {
@@ -804,4 +804,12 @@ html {
 .b-news-30:active,
 .b-news-30:focus {
   background: none;
+}
+
+.b-ghost-signup-link {
+  position: relative;
+  height: 200px;
+  margin-top: 20px;
+  display: block;
+  cursor: default;
 }

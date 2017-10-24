@@ -19,6 +19,9 @@
                 </a>
               </ul>
             </div>
+
+            <a href="/signup" class="b-ghost-signup-link"></a>
+
           </div>
           <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
             <div>

@@ -77,7 +77,7 @@ $('.b-request-submit').on('click', function(e){
       // Enable notification in the navbar
       setTimeout(function(){
         enableNotification();
-      }, 3000);
+      }, 500);
 
     }, 800);
   }, 1700);
@@ -168,6 +168,7 @@ function hideMentorshipRequest(){
     message.addClass('hidden');
     $('.b-profile-request-counter').addClass('hidden');
     $('.b-profile-request-label').removeClass('hidden');
+    $('.b-profile-request-feed-entry').removeClass('hidden');
   }, 300);
 }
 
