@@ -787,3 +787,16 @@ html {
 .b-profile-request-message--collapsed {
   opacity: 0;
 }
+
+.b-news-30 {
+  font-size: 14px;
+  background: none;
+  padding: 13px 0 11px 0;
+  margin-bottom: 20px;
+}
+
+.b-news-30:hover,
+.b-news-30:active,
+.b-news-30:focus {
+  background: none;
+}

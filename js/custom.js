@@ -185,3 +185,4 @@ $('.b-profile-request-accept').on('click', function(e){
 $('.b-profile-request-reject').on('click', function(e){
   setTimeout(hideMentorshipRequest, 300);
 });
+

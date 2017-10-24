@@ -94,9 +94,14 @@
                 </div>
 
               <?php } ?>
-
-
             </div>
+
+            <div class="row m-0 m-l-10">
+              <button class="b-news-30 btn btn-default btn-block btn-lg">
+                <span class="text-muted">Load More Articles</span>
+              </button>
+            </div>
+
           </div>
         </div>
       </div>

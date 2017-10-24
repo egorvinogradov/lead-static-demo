@@ -70,7 +70,7 @@ $item = $items[$include_data['newsfeed_id']];
 
                             <div class="col-md-12 gray">
                               <?php if ($reply->is_readers_pick) { ?>
-                                <p>
+                                <p class="m-b-15">
                                   <b>Readers` pick</b>
                                   <i class="m-l-5 fa fa-check-circle"></i>
                                 </p>
@@ -79,9 +79,9 @@ $item = $items[$include_data['newsfeed_id']];
 
                             <div class="col-md-12">
 
-                              <div class="comment-card-img b-modal-14">
+                              <a class="comment-card-img b-modal-14" href="/users/<?php echo $reply_user->index ?>/profile">
                                 <img class="img-responsive img-circle" alt="image" src="<?php echo $reply_user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
-                              </div>
+                              </a>
 
                               <div class="comment-card-name">
                                 <p class="b-modal-13">
@@ -97,7 +97,7 @@ $item = $items[$include_data['newsfeed_id']];
                                     <span class="gray">
                                     <?php echo join(' at ', [$reply_user->job_title, $reply_user->company_name]) ?>
                                       <span class="m-l-5 m-r-5">•</span>
-                                      <?php echo date("m/d/Y", strtotime($reply->timestamp)) ?>
+                                      Today at <?php echo date("g:i a", strtotime($reply->timestamp)) ?>
                                   </span>
                                   </a>
                                 </p>

@@ -14,7 +14,7 @@
     "already_rated": false,
     "has_messages": false,
     "unread_messages_count": 0,
-    "mentors": [11, 12, 13, 14, 15],
+    "mentors": [11, 12, 13, 14, 15, 16, 17],
     "mentees": [17, 18]
   },
   {
@@ -225,7 +225,7 @@
     "location": {
       "name": "San Francisco, CA"
     },
-    "picture_url": "/data/photos/users/14.jpg",
+    "picture_url": "/data/photos/users/12.jpg",
     "is_mentor": true,
     "relationship": "mentor",
     "already_rated": false,
@@ -243,7 +243,7 @@
     "location": {
       "name": "San Francisco, CA"
     },
-    "picture_url": "/data/photos/users/15.jpg",
+    "picture_url": "/data/photos/users/13.jpg",
     "is_mentor": true,
     "relationship": "mentor",
     "already_rated": false,
@@ -262,7 +262,7 @@
     "location": {
       "name": "San Francisco, CA"
     },
-    "picture_url": "/data/photos/users/12.jpg",
+    "picture_url": "/data/photos/users/14.jpg",
     "is_mentor": true,
     "relationship": "mentor",
     "already_rated": false,
@@ -280,7 +280,7 @@
     "location": {
       "name": "San Francisco, CA"
     },
-    "picture_url": "/data/photos/users/13.jpg",
+    "picture_url": "/data/photos/users/15.jpg",
     "is_mentor": true,
     "relationship": "mentor",
     "already_rated": false,
@@ -299,7 +299,7 @@
       "name": "San Francisco, CA"
     },
     "picture_url": "/data/photos/users/16.jpg",
-    "is_mentor": true,
+    "is_mentor": false,
     "relationship": "mentee",
     "mentorship_request_sent": true,
     "already_rated": false,
@@ -318,7 +318,7 @@
       "name": "Oakland, CA"
     },
     "picture_url": "/data/photos/users/17.jpg",
-    "is_mentor": true,
+    "is_mentor": false,
     "relationship": "mentee",
     "already_rated": false,
     "has_messages": false,
@@ -336,7 +336,7 @@
       "name": "San Francisco, CA"
     },
     "picture_url": "/data/photos/users/18.jpg",
-    "is_mentor": true,
+    "is_mentor": false,
     "relationship": "mentee",
     "already_rated": false,
     "has_messages": false,
