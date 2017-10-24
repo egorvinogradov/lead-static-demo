@@ -376,6 +376,11 @@ input[type=password] {
   margin-bottom: 23px;
 }
 
+.b-question-9 a,
+.b-question-9 a:hover {
+  color: #2b2b2b;
+}
+
 .b-question-10 {
   height: auto !important;
   text-transform: none;

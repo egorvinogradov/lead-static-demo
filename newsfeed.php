@@ -80,7 +80,7 @@
                               <div>
                                 <div class="row">
                                   <div class="col-md-12 b-news-13">
-                                    <?php echo output_reply_images($item->top_reply->reply_icons, ['opinion', 'opinions'], 'more opinions') ?>
+                                    <?php echo output_reply_images($item->top_reply->reply_icons, ['opinion', 'opinions'], 'See all opinions') ?>
                                   </div>
                                 </div>
                               </div>

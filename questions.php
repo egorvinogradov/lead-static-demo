@@ -82,9 +82,8 @@
                         Your Question <span class="m-r-5 m-l-5">•</span> Submitted seconds ago
                       </p>
                       <div class="news-card-title2 b-question-10 b-question-text">
-                        If you mean a job as someone who applies off-the-shelf tools (e.g., libraries from R, or scikit-learn, or Dato),
-                        it might suffice to take two or three ML-related classes during your undergrad years, or one of the many online
-                        MOOCs (eg such as https://www.coursera.org/learn.
+                        What are the courses/certifications for a marketing specialist who has 4+ years of experience which
+                        will add on to the career growth? Can you please advice on the cost and duration as well?
                       </div>
                     </div>
 
@@ -116,35 +115,37 @@
 
                       <div class="col-md-12">
                         <div class="news-card-title">
-                          <div class="dots2  news-card-title2 b-question-10">
+                          <a class="dots2  news-card-title2 b-question-10" href="#">
                             <?php echo $item->title ?>
-                          </div>
+                          </a>
                         </div>
                         <div class="news-card-delimiter"></div>
                         <div class="col-md-12" style="padding-top: 15px;">
                           <div>
                             <div class="row">
                               <div class="col-md-2 b-news-10-0">
-                                <div class="text-center b-news-10">
+                                <a class="text-center b-news-10" href="/users/<?php echo $reply_user->index ?>/profile">
                                   <img class="img-responsive img-circle" alt="image" src="<?php echo $reply_user->picture_url ?>" style="width: 60px; height: 60px; margin: 0px auto;">
-                                </div>
+                                </a>
                               </div>
                               <div class="col-md-9" style="padding-left: 0;">
-                                <div>
                                   <p>
-                                    <b class="b-news-11">
-                                      <?php echo $reply_user->first_name ?>
-                                      <?php echo $reply_user->last_name ?>
-                                    </b>
-                                    <span class="gray">
+                                    <a href="/users/<?php echo $reply_user->index ?>/profile">
+                                      <b class="b-news-11">
+                                        <?php echo $reply_user->first_name ?>
+                                        <?php echo $reply_user->last_name ?>
+                                      </b>
+                                      <span class="gray">
                                         <?php echo join(' at ', [$reply_user->job_title, $reply_user->company_name]) ?>
                                       </span>
+                                    </a>
                                   </p>
-                                </div>
                               </div>
                               <div class="col-md-12 b-news-12" style="padding-right: 15px; padding-left: 15px; padding-top: 10px;">
                                 <p style="font-weight: 400; height: 66px; overflow: hidden;" class="b-question-text">
-                                  <?php echo $item->top_reply->text ?>
+                                  <a href="#">
+                                    <?php echo $item->top_reply->text ?>
+                                  </a>
                                 </p>
                               </div>
                             </div>
@@ -153,13 +154,11 @@
                         </div>
 
                         <div class="col-md-12" style="padding-left: 15px; padding-bottom: 15px;">
-                          <div>
                             <div class="row">
-                              <div class="col-md-12 b-news-13">
-                                <?php echo output_reply_images($item->top_reply->reply_icons, ['answer', 'answers'], 'more answers') ?>
-                              </div>
+                              <a class="col-md-12 b-news-13" href="#">
+                                <?php echo output_reply_images($item->top_reply->reply_icons, ['answer', 'answers'], 'See all answers') ?>
+                              </a>
                             </div>
-                          </div>
                         </div>
 
                         <div class="col-md-12"></div>
@@ -169,7 +168,11 @@
                   </div>
               <?php } ?>
 
-
+              <div class="row m-0">
+                <button class="b-news-30 btn btn-default btn-block btn-lg">
+                  <span class="text-muted">Load More Questions</span>
+                </button>
+              </div>
 
             </div>
           </div>
