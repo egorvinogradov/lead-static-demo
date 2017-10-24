@@ -29,7 +29,7 @@ $notification_user_2 = get_users_by_ids(16);
 
             <li>
               <div class="message-center">
-                <a href="/users/<?php echo $notification_user_1->index ?>/profile">
+                <a href="/users/<?php echo $notification_user_1->index ?>/messages">
                   <div class="user-img">
                     <img src="<?php echo $notification_user_1->picture_url ?>" alt="user" class="img-circle">
                     <span class="profile-status online pull-right bg-danger"></span>
