@@ -108,7 +108,7 @@
               <?php
                 $items = get_json('questions');
                 foreach ($items as $item) {
-                  $reply_user = get_user_by_index($item->top_reply->user_id); ?>
+                  $reply_user = get_users_by_ids($item->top_reply->user_id); ?>
 
 
                   <div class="panel b-question-9">
@@ -156,7 +156,7 @@
                           <div>
                             <div class="row">
                               <div class="col-md-12 b-news-13">
-                                <?php echo output_reply_images($item->top_reply->reply_icons, 'more answers') ?>
+                                <?php echo output_reply_images($item->top_reply->reply_icons, ['answer', 'answers'], 'more answers') ?>
                               </div>
                             </div>
                           </div>

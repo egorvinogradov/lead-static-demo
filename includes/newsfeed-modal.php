@@ -59,7 +59,7 @@ $item = $items[$include_data['newsfeed_id']];
 
                     <?php
                       foreach ($replies as $reply) {
-                        $reply_user = get_user_by_index($reply->user_id);
+                        $reply_user = get_users_by_ids($reply->user_id);
                         ?>
 
                       <div class="<?php echo $reply->is_readers_pick ? 'user-pick-bg' : '' ?>">

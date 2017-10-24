@@ -2,7 +2,7 @@
 
 <?php
 $user_id = $include_data['user_id'];
-$item = get_user_by_index($user_id);
+$item = get_users_by_ids($user_id);
 ?>
 
 <?php include_file('includes/header') ?>
@@ -22,18 +22,17 @@ $item = get_user_by_index($user_id);
               <img class="img-responsive " alt="User image" src="<?php echo $item->picture_url ?>">
               <div class="user-mentors">Mentors</div>
               <div>
-                <div class="opinion-images">
-                  <?php echo output_reply_images([7,8,9,10,12], 'and 6 more') ?>
-                </div>
+                <a class="opinion-images b-profile-50" href="/users/<?php echo $item->index ?>/mentors">
+                  <?php echo output_reply_images($item->mentors) ?>
+                </a>
               </div>
               <div class="user-mentees">Mentees</div>
               <div>
-                <div class="opinion-images">
-                  <?php echo output_reply_images([3,4,5,15,18], 'and 1 more') ?>
-                </div>
+                <a class="opinion-images b-profile-50" href="/users/<?php echo $item->index ?>/mentees">
+                  <?php echo output_reply_images($item->mentees) ?>
+                </a>
               </div>
             </div>
-
 
             <div class="col-md-9">
 
@@ -102,6 +101,12 @@ $item = get_user_by_index($user_id);
                     <li class="<?php echo $include_data['tab'] == 'profile' ? 'active' : '' ?>">
                       <a href="/users/<?php echo $item->index ?>/profile"><?php echo $item->first_name ?>'s Feed</a>
                     </li>
+                    <li class="<?php echo $include_data['tab'] == 'mentors' ? 'active' : '' ?>">
+                      <a href="/users/<?php echo $item->index ?>/mentors">Mentors</a>
+                    </li>
+                    <li class="<?php echo $include_data['tab'] == 'mentees' ? 'active' : '' ?>">
+                      <a href="/users/<?php echo $item->index ?>/mentees">Mentees</a>
+                    </li>
 
                     <?php if ($item->has_messages || $include_data['tab'] == 'messages') { ?>
                       <li class="<?php echo $include_data['tab'] == 'messages' ? 'active' : '' ?>">
@@ -127,7 +132,16 @@ $item = get_user_by_index($user_id);
 
               <div class="col-md-12 col-xs-12">
                 <div class="white-box b-profile-22">
-                  <?php include_file('includes/user-' . $include_data['tab'], [user => $item]) ?>
+                  <?php
+                    $template_id = $include_data['tab'];
+                    if ($include_data['tab'] === 'mentors' || $include_data['tab'] === 'mentees') {
+                      $template_id = 'network';
+                    }
+                    include_file('includes/user-' . $template_id, [
+                      user => $item,
+                      tab => $include_data['tab'],
+                    ]);
+                  ?>
                 </div>
               </div>
 

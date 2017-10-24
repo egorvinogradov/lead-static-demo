@@ -2,8 +2,8 @@
 <?php
 
 $current_user = get_global_var('current_user');
-$notification_user_1 = get_user_by_index(3);
-$notification_user_2 = get_user_by_index(16);
+$notification_user_1 = get_users_by_ids(3);
+$notification_user_2 = get_users_by_ids(16);
 
 ?>
 

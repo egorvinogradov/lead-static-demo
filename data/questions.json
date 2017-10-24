@@ -3,7 +3,7 @@
     "title": "What is your work life balance like? What happens if you are running late for work one day?",
     "top_reply":   {
       "user_id": 1,
-      "reply_icons": [3, 4, 5],
+      "reply_icons": [3, 4, 5, 6, 8, 9, 10, 11],
       "text": "Let's talk about running late. In my experience so far (>2.5 years) there really is no such thing as 'running late' unless you're committed to be in a meeting, and you're a crucial part of it. If you're actually not in the office or available to participate then, that's a problem. But guess what? You'll probably know this is coming at least a half hour before it happens. Ping the relevant people on the meeting, say 'Hey I completely whiffed on this one -- I'm not going to make it. Can we reschedule?'"
     }
   },
@@ -11,7 +11,7 @@
     "title": "What is the difference between a programmer, a good programmer and a great programmer?",
     "top_reply":   {
       "user_id": 2,
-      "reply_icons": [6, 7, 8],
+      "reply_icons": [6, 7, 8, 9, 10, 11],
       "text": "Great developers are rare. Their productivity is 3 times that of an average developer and 10 times that of a bad developer (Reference: The Mythical man month). The top 1% developers in the world don’t just write solid code but have important intangible traits."
     }
   },

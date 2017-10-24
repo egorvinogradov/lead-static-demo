@@ -61,14 +61,28 @@ function get_users($relationship = null){
 };
 
 
-function output_reply_images($ids, $suffix){
-  $users = get_users(null);
-  $imgs = array_map(function($id) use ($users){
-    $url = $users[$id]->picture_url;
+function output_reply_images($ids, $suffix = '', $zero_count_placeholder = ''){
+  $user_list_length = 5;
+  $user_list_ids = array_slice($ids, 0, $user_list_length);
+  $counter = count($ids) - $user_list_length;
+  if ($counter <= 0) {
+    $counter = 0;
+  }
+  $imgs = array_map(function($user){
+    $url = $user->picture_url;
     return '<img class="img-responsive img-circle" src="' . $url . '">';
-  }, $ids);
-  $count_str = $suffix ? '<div class="opinion-count gray">' . $suffix . '</div>' : '';
-  return '<div class="opinion-images">' . join('', $imgs) . '</div>' . $count_str;
+  }, get_users_by_ids($user_list_ids));
+  if (is_array($suffix)) {
+    $suffix_str = $counter === 1 ? $suffix[0] : $suffix[1];
+  }
+  else {
+    $suffix_str = $suffix;
+  }
+  $counter_str = $counter ? '<div class="opinion-count gray">and ' . $counter . ' more ' . $suffix_str . '</div>' : '';
+  if ($zero_count_placeholder && !$counter) {
+    $counter_str = '<div class="opinion-count gray">' . $zero_count_placeholder . '</div>';
+  }
+  return '<div class="opinion-images">' . join('', $imgs) . '</div>' . $counter_str;
 }
 
 
@@ -83,6 +97,14 @@ function render_questions_topics(){
   return join("\n", $categories_str_list);
 }
 
-function get_user_by_index($index){
-  return get_users()[$index];
+function get_users_by_ids($ids){
+  $all_users = get_users(null);
+  if (is_array($ids)) {
+    return array_map(function($id) use ($all_users){
+      return $all_users[$id];
+    }, $ids);
+  }
+  else {
+    return $all_users[$ids];
+  }
 }

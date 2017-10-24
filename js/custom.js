@@ -129,3 +129,30 @@ $('.b-question-submit').on('click', function(e){
     }, 100);
   }, 1000);
 });
+
+
+
+/** MESSAGES **/
+
+function formatTime(date){
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var suffix = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  return hours + ':' + minutes + ' ' + suffix;
+}
+
+function initializeMessagesTimestamps(selector){
+  var startTimeStamp = +new Date() - 2 * 60 * 1000; // 2 min ago
+  var step = 60 * 1000; // 1 min
+
+  $(selector).each(function(i, e){
+    var el = $(e);
+    el.text( formatTime( new Date(startTimeStamp) ) );
+    startTimeStamp += step;
+  });
+}
+
+initializeMessagesTimestamps('.b-message-datetime');

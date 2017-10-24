@@ -13,14 +13,10 @@
     "relationship": "self",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
-
-
-
-
   {
     "first_name": "Susan",
     "last_name": "Trevino",
@@ -35,7 +31,9 @@
     "relationship": "stranger",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
   {
 
@@ -52,10 +50,10 @@
     "relationship": "stranger",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Jenna",
     "last_name": "Moss",
@@ -70,10 +68,10 @@
     "relationship": "stranger",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Gloria",
     "last_name": "Martinez",
@@ -88,10 +86,10 @@
     "relationship": "stranger",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Della",
     "last_name": "Duncan",
@@ -106,10 +104,10 @@
     "relationship": "stranger",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Deborah",
     "last_name": "Boyd",
@@ -124,10 +122,10 @@
     "relationship": "stranger",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "John",
     "last_name": "Farrish",
@@ -142,10 +140,10 @@
     "relationship": "stranger",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "George",
     "last_name": "Griffith",
@@ -160,10 +158,10 @@
     "relationship": "stranger",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Edith",
     "last_name": "Janes",
@@ -178,10 +176,10 @@
     "relationship": "stranger",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Carmela",
     "last_name": "Smith",
@@ -196,21 +194,10 @@
     "relationship": "stranger",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "first_name": "Jason",
     "last_name": "Young",
@@ -224,11 +211,11 @@
     "is_mentor": true,
     "relationship": "mentor",
     "already_rated": false,
-    "has_messages": false,
-    "unread_messages_count": 0
+    "has_messages": true,
+    "unread_messages_count": 1,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Terresa",
     "last_name": "Pierce",
@@ -243,10 +230,10 @@
     "relationship": "mentor",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Ena",
     "last_name": "Milford",
@@ -261,10 +248,10 @@
     "relationship": "mentor",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Charles",
     "last_name": "Rios",
@@ -279,10 +266,10 @@
     "relationship": "mentor",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Barbara",
     "last_name": "Ong",
@@ -297,18 +284,10 @@
     "relationship": "mentor",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
-
-
-
-
-
-
-
-
   {
     "first_name": "Sophia",
     "last_name": "Gardner",
@@ -324,14 +303,14 @@
     "mentorship_request_sent": true,
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Andria",
     "last_name": "Elliott",
-    "job_title": "Digital Marketing Intern",
+    "job_title": "Digital Marketing Manager",
     "company_name": "Lyft",
     "industry": "Information Technology & Services",
     "location": {
@@ -342,10 +321,10 @@
     "relationship": "mentee",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   },
-
-
   {
     "first_name": "Sarah",
     "last_name": "Jones",
@@ -360,6 +339,8 @@
     "relationship": "mentee",
     "already_rated": false,
     "has_messages": false,
-    "unread_messages_count": 0
+    "unread_messages_count": 0,
+    "mentors": [11, 12, 13, 14, 15],
+    "mentees": [17, 18]
   }
 ]
