@@ -14,13 +14,13 @@
                 <div class="form-group">
                   <div class="col-md-12">
                     <div class="radio radio-info">
-                      <input type="radio" name="mentors" id="specificcompany" value="1" checked>
+                      <input type="radio" name="all_mentors" id="specificcompany" value="" <?php echo $_GET['all_mentors'] ? '' : 'checked' ?>>
                       <label class="b-filters-1" for="specificcompany">
                         My Company Only
                       </label>
                     </div>
                     <div class="radio radio-info">
-                      <input type="radio" name="mentors" id="allmentors" value="0">
+                      <input type="radio" name="all_mentors" id="allmentors" value="true" <?php echo $_GET['all_mentors'] ? 'checked' : '' ?>>
                       <label class="b-filters-1" for="allmentors">
                         All Mentors
                       </label>
@@ -69,6 +69,7 @@
                 <div class="form-group m-b-15">
                   <div class="col-sm-12 text-center">
                     <button type="submit" class="btn btn-info btn-block">Search</button>
+                    <a href="/" class="btn btn-default btn-block m-t-10">Clear Filters</a>
                   </div>
                 </div>
               </form>
@@ -78,8 +79,12 @@
             <div class="row">
 
               <?php
+                $users = get_users('stranger');
+                if ($_GET['all_mentors']) {
+                  $users = get_users('outsider');
+                }
                 include_file('includes/user-list', [
-                  users => get_users('stranger'),
+                  users => $users,
                 ]);
               ?>
 
