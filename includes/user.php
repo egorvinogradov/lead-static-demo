@@ -3,10 +3,11 @@
 <?php
 $user_id = $include_data['user_id'];
 $item = get_users_by_ids($user_id);
+$page_title = $include_data['is_my_profile'] ? 'My Profile' : 'Profile';
 ?>
 
 <?php include_file('includes/header') ?>
-<?php include_file('includes/navbar', [title => 'Profile']) ?>
+<?php include_file('includes/navbar', [title => $page_title]) ?>
 <?php include_file('includes/sidebar') ?>
 
 
@@ -131,12 +132,15 @@ $item = get_users_by_ids($user_id);
                         <?php echo ($include_data['is_my_profile'] ? 'Your' : $item->first_name . '\'s') . ' Feed' ?>
                       </a>
                     </li>
-                    <li class="<?php echo $include_data['tab'] == 'mentors' ? 'active' : '' ?>">
-                      <a href="/users/<?php echo $item->index ?>/mentors">Mentors</a>
-                    </li>
-                    <li class="<?php echo $include_data['tab'] == 'mentees' ? 'active' : '' ?>">
-                      <a href="/users/<?php echo $item->index ?>/mentees">Mentees</a>
-                    </li>
+
+                    <?php if ( !$include_data['is_my_profile'] ) { ?>
+                      <li class="<?php echo $include_data['tab'] == 'mentors' ? 'active' : '' ?>">
+                        <a href="/users/<?php echo $item->index ?>/mentors">Mentors</a>
+                      </li>
+                      <li class="<?php echo $include_data['tab'] == 'mentees' ? 'active' : '' ?>">
+                        <a href="/users/<?php echo $item->index ?>/mentees">Mentees</a>
+                      </li>
+                    <?php } ?>
 
                     <?php if ($item->has_messages || $include_data['tab'] == 'messages') { ?>
                       <li class="<?php echo $include_data['tab'] == 'messages' ? 'active' : '' ?>">
