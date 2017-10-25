@@ -1,6 +1,7 @@
 RewriteEngine On
 RewriteRule ^(([^/]+/)*[^./]+)/?$ $1.php
 RewriteRule ^users/* user.php
+RewriteRule ^newsfeed/* newsfeed.php
 
 RedirectMatch /users/45/mentors /my-mentors
 RedirectMatch /users/45/mentees /my-mentees

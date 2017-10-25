@@ -33,6 +33,7 @@ $('.b-notification-dropdown').on('click', function(){
 /** MODALS **/
 
 $('.b-modal-open').on('click', function(e){
+  history.replaceState({}, '', '/newsfeed/12/');
   showPopup('newsfeed');
 });
 
@@ -56,6 +57,9 @@ function showPopup(id){
 function hidePopups(){
   $('.b-modal').addClass('hidden');
   $('body').removeClass('modal-open');
+  if ( isNewsFeed() ) {
+    history.replaceState({}, '', '/newsfeed/');
+  }
 }
 
 $('.b-modal-upvote').on('click', function(e){
@@ -187,3 +191,18 @@ $('.b-profile-request-reject').on('click', function(e){
   setTimeout(hideMentorshipRequest, 300);
 });
 
+
+
+/** NEWSFEED **/
+
+function isNewsFeed(){
+  return location.pathname.indexOf('/newsfeed') > -1;
+}
+
+function isNewsFeedItem(){
+  return location.pathname.replace(/^\/newsfeed\/?/, '');
+}
+
+if ( isNewsFeedItem() ) {
+  showPopup('newsfeed');
+}

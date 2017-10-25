@@ -57,7 +57,7 @@ $item = $include_data['user'];
   <div class="m-l-10 b-profile-41">
     <div class="rating-done-bg request-mentor">
       <b>Nothing to rate yet</b><br>
-      You will be able to rate your weekly mentorship experience with Yumi Alyssa
+      You will be able to rate your weekly mentorship experience with <?php echo $item->first_name ?>
       after this week is finished
     </div>
   </div>

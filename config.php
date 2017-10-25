@@ -62,7 +62,7 @@ function get_users($relationship = null){
 
 
 function output_reply_images($ids, $suffix = '', $zero_count_placeholder = ''){
-  $user_list_length = 5;
+  $user_list_length = 4;
   $user_list_ids = array_slice($ids, 0, $user_list_length);
   $counter = count($ids) - $user_list_length;
   if ($counter <= 0) {
